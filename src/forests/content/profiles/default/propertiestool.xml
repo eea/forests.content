@@ -1,0 +1,15 @@
+<object name="portal_properties">
+  <object name="redmine_configuration_properties" meta_type="Plone Property Sheet">
+      <property name="redmine_url" type="string" purge="False"></property>
+      <property name="version" type="string"></property>
+      <property name="user_api_key" type="string" purge="False"></property>
+      <property name="project" type="string" purge="False"></property>
+  </object>
+  <object name="site_properties" >
+      <property name="typesUseViewActionInListings" types="lines" purge="False">
+        <element value="Image"/>
+        <element value="RichImage"/>
+        <element value="File"/>
+      </property>
+  </object>
+</object>

@@ -1,0 +1,80 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  xmlns:i18n="http://namespaces.zope.org/i18n"
+  i18n_domain="forests.content">
+
+  <i18n:registerTranslations directory="locales" />
+
+  <!-- <includeDependencies package="." /> -->
+
+  <include package="plone.app.contentmenu" />
+  <include file="cache.zcml" />
+
+  <browser:jbot
+      directory="browser/pt-overrides"
+      layer="forests.content.interfaces.IForestsContentLayer"
+      />
+
+  <!-- Make content types PDF Aware -->
+  <class class="collective.cover.content.Cover">
+    <implements interface="eea.pdf.interfaces.IPDFAware" />
+  </class>
+
+  <class class="plone.app.contenttypes.content.Document">
+    <implements interface="eea.pdf.interfaces.IPDFAware" />
+  </class>
+
+  <class class="plone.dexterity.content.Container">
+    <implements interface="eea.pdf.interfaces.IPDFAware" />
+  </class>
+
+  <class class="plone.dexterity.content.Container">
+    <implements interface="eea.pdf.interfaces.ICollectionPDFAware" />
+  </class>
+
+  <!-- Enable blocks transformed -->
+  <class class=".browser.overrides.PageBody">
+      <implements interface="plone.app.blocks.interfaces.IBlocksTransformEnabled" />
+  </class>
+
+  <class class=".browser.overrides.FolderBody">
+    <implements interface="plone.app.blocks.interfaces.IBlocksTransformEnabled" />
+  </class>
+
+  <class class="plone.namedfile.field.NamedBlobImage">
+    <implements interface="plone.rfc822.interfaces.IPrimaryField" />
+  </class>
+
+  <genericsetup:registerProfile
+    name="default"
+    title="forests.content"
+    directory="profiles/default"
+    description="Installs the forests.content add-on."
+    provides="Products.GenericSetup.interfaces.EXTENSION"
+    />
+
+  <genericsetup:registerProfile
+    name="uninstall"
+    title="forests.content (uninstall)"
+    directory="profiles/uninstall"
+    description="Uninstalls the forests.content add-on."
+    provides="Products.GenericSetup.interfaces.EXTENSION"
+    />
+
+  <subscriber
+    for="plone.app.iterate.interfaces.IWorkingCopy
+         OFS.interfaces.IObjectWillBeRemovedEvent"
+    handler=".events.handle_iterate_wc_deletion"
+  />
+
+  <subscriber
+    for=".contenttypes.IRichImage
+         zope.lifecycleevent.interfaces.IObjectCreatedEvent"
+    handler=".events.set_title_description"
+  />
+
+  <adapter name="getObjSize" factory=".indexers.getObjSize_image" />
+
+</configure>

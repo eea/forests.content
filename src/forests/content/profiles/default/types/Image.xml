@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<object
+    i18n:domain="plone"
+    meta_type="Dexterity FTI"
+    name="Image"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+
+    <!-- Changed schema file -->
+    <property name="klass">plone.app.contenttypes.content.Image</property>
+    <property name="model_file">plone.app.contenttypes.schema:image.xml</property>
+</object>
