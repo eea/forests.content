@@ -40,7 +40,10 @@ setup(
     zip_safe=False,
     install_requires=[
         'plone.api',
+        'plone.app.iterate >= 3.3.1',
         'plone.app.contenttypes',
+        'plone.directives.dexterity',
+        'plone.directives.form',
         'python-redmine',
     ],
     extras_require={
