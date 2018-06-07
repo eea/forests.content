@@ -48,6 +48,14 @@
     provides="Products.GenericSetup.interfaces.EXTENSION"
     />
 
+  <genericsetup:registerProfile
+    name="forests"
+    title="forests.content (extra)"
+    directory="profiles/forests"
+    description="Extra content for the Forests website"
+    provides="Products.GenericSetup.interfaces.EXTENSION"
+    />
+
   <subscriber
     for="plone.app.iterate.interfaces.IWorkingCopy
          OFS.interfaces.IObjectWillBeRemovedEvent"
