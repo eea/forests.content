@@ -9,5 +9,6 @@
     <dependency>profile-plone.app.ldap:ldap</dependency>
     <dependency>profile-plone.app.querystring:default</dependency>
     <dependency>profile-Products.CMFPlacefulWorkflow:CMFPlacefulWorkflow</dependency>
+    <dependency>profile-forests.content:forests</dependency>
   </dependencies>
 </metadata>
