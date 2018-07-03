@@ -1,16 +1,15 @@
-allow_discussion: 
-exclude_from_nav: False
-title: 
+title: About us
 description: 
 subjects: 
-language: 
-effective: 2018-06-08T15:14:39
+language: en
+effective: 2018-07-02T17:46:58
 expires: 
 creators: dumitval
 contributors: 
 rights: 
+allow_discussion: 
+exclude_from_nav: False
 relatedItems: 
-changeNote: 
-table_of_contents: 
-Portal-Type: Document
+nextPreviousEnabled: False
+Portal-Type: Folder
 
