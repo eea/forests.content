@@ -12,21 +12,21 @@
   <include file="cache.zcml" />
 
   <!-- Make content types PDF Aware -->
-  <class class="collective.cover.content.Cover">
-    <implements interface="eea.pdf.interfaces.IPDFAware" />
-  </class>
-
-  <class class="plone.app.contenttypes.content.Document">
-    <implements interface="eea.pdf.interfaces.IPDFAware" />
-  </class>
-
-  <class class="plone.dexterity.content.Container">
-    <implements interface="eea.pdf.interfaces.IPDFAware" />
-  </class>
-
-  <class class="plone.dexterity.content.Container">
-    <implements interface="eea.pdf.interfaces.ICollectionPDFAware" />
-  </class>
+  <!-- <class class="collective.cover.content.Cover"> -->
+  <!--   <implements interface="eea.pdf.interfaces.IPDFAware" /> -->
+  <!-- </class> -->
+  <!--  -->
+  <!-- <class class="plone.app.contenttypes.content.Document"> -->
+  <!--   <implements interface="eea.pdf.interfaces.IPDFAware" /> -->
+  <!-- </class> -->
+  <!--  -->
+  <!-- <class class="plone.dexterity.content.Container"> -->
+  <!--   <implements interface="eea.pdf.interfaces.IPDFAware" /> -->
+  <!-- </class> -->
+  <!--  -->
+  <!-- <class class="plone.dexterity.content.Container"> -->
+  <!--   <implements interface="eea.pdf.interfaces.ICollectionPDFAware" /> -->
+  <!-- </class> -->
 
   <class class="plone.namedfile.field.NamedBlobImage">
     <implements interface="plone.rfc822.interfaces.IPrimaryField" />
