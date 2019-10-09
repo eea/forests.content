@@ -1,0 +1,16 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+  xmlns:plone="http://namespaces.plone.org/plone"
+  xmlns:i18n="http://namespaces.zope.org/i18n"
+  i18n_domain="forests.content">
+
+  <browser:page
+    name="data_connector_view"
+    for="forests.content.interfaces.IDataConnector"
+    permission="zope2.View"
+    template="pt/data_connector_view.pt"
+    />
+
+</configure>

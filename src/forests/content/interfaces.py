@@ -145,6 +145,7 @@ class IComputedMetadata(Interface):
 class IDataConnector(Interface):
     """ A generic discodata connector
     """
+
     endpoint_url = schema.TextLine(
         title=u"Discodata endpoint URL", required=True,
         default=u"http://discomap.eea.europa.eu/App/SqlEndpoint/query"
@@ -153,10 +154,12 @@ class IDataConnector(Interface):
         title=u"SQL Query",
         required=True,
     )
-    directives.fieldset('data-connector', label="Data connector", fields=[
+
+    directives.fieldset('dataconnector', label="Data connector", fields=[
         'endpoint_url', 'query',
     ])
 
 
 alsoProvides(IMetadata, IFormFieldProvider)
 alsoProvides(IOptionalMetadata, IFormFieldProvider)
+alsoProvides(IDataConnector, IFormFieldProvider)
