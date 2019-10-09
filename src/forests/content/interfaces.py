@@ -147,7 +147,7 @@ class IDataConnector(Interface):
     """
     endpoint_url = schema.TextLine(
         title=u"Discodata endpoint URL", required=True,
-        default="http://discomap.eea.europa.eu/App/SqlEndpoint/query"
+        default=u"http://discomap.eea.europa.eu/App/SqlEndpoint/query"
     )
     query = schema.Text(
         title=u"SQL Query",
