@@ -7,7 +7,7 @@ class DataConnectorView(BrowserView):
     """
 
     def data(self):
-        if self.query:
+        if self.context.query:
             connector = IDataConnector(self.context)
 
             return connector.data['results']

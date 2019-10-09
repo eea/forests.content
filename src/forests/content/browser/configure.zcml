@@ -8,7 +8,7 @@
 
   <browser:page
     name="view"
-    for="forests.content.interfaces.IDataConnector"
+    for="forests.content.interfaces.IDataProvider"
     permission="zope2.View"
     template="pt/data_connector_view.pt"
     class=".views.DataConnectorView"

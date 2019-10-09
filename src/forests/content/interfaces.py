@@ -2,7 +2,7 @@
 """Module where all interfaces, events and exceptions live."""
 
 from zope import schema
-from zope.interface import Attribute, Interface, alsoProvides
+from zope.interface import Attribute, Interface, provider
 from zope.publisher.interfaces.browser import IDefaultBrowserLayer
 
 from plone.app.z3cform.widget import AjaxSelectFieldWidget
@@ -16,6 +16,7 @@ class IForestsContentLayer(IDefaultBrowserLayer):
     """Marker interface that defines a browser layer."""
 
 
+@provider(IFormFieldProvider)
 class IMetadata(model.Schema):
     """ Generic metadata for forests data types
     """
@@ -119,6 +120,7 @@ class IMetadata(model.Schema):
                                         required=False,)
 
 
+@provider(IFormFieldProvider)
 class IOptionalMetadata(model.Schema):
     """ Generic optional metadata for forests data types
     """
@@ -142,6 +144,7 @@ class IComputedMetadata(Interface):
     resource_format = Attribute(u'Extracted from file extension')
 
 
+@provider(IFormFieldProvider)
 class IDataConnector(Interface):
     """ A generic discodata connector
     """
@@ -155,11 +158,11 @@ class IDataConnector(Interface):
         required=True,
     )
 
-    directives.fieldset('dataconnector', label="Data connector", fields=[
-        'endpoint_url', 'query',
-    ])
+    # directives.fieldset('dataconnector', label="Data connector", fields=[
+    #     'endpoint_url', 'query',
+    # ])
 
 
-alsoProvides(IMetadata, IFormFieldProvider)
-alsoProvides(IOptionalMetadata, IFormFieldProvider)
-alsoProvides(IDataConnector, IFormFieldProvider)
+class IDataProvider(Interface):
+    """ Marker interface for objects that provide remote data
+    """
