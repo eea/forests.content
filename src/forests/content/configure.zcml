@@ -6,6 +6,7 @@
   i18n_domain="forests.content">
 
   <i18n:registerTranslations directory="locales" />
+  <includeDependencies package="." />
 
   <!-- <include package="plone.app.contentmenu" /> -->
   <!-- <include file="cache.zcml" /> -->
@@ -48,7 +49,15 @@
     for="plone.dexterity.interfaces.IDexterityContent"
     />
 
-  <!-- <includeDependencies package="." /> -->
+  <plone:behavior
+    name="discodata.connector"
+    title="Discodata connector"
+    description="Adds discodata connector query execution"
+    provides=".interfaces.IDataConnector"
+    factory=".behavior.DataConnector"
+    for="plone.dexterity.interfaces.IDexterityContent"
+    />
+
 
   <!-- Make content types PDF Aware -->
   <!-- <class class="collective.cover.content.Cover"> -->

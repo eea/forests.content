@@ -142,5 +142,21 @@ class IComputedMetadata(Interface):
     resource_format = Attribute(u'Extracted from file extension')
 
 
+class IDataConnector(Interface):
+    """ A generic discodata connector
+    """
+    endpoint_url = schema.TextLine(
+        title=u"Discodata endpoint URL", required=True,
+        default="http://discomap.eea.europa.eu/App/SqlEndpoint/query"
+    )
+    query = schema.Text(
+        title=u"SQL Query",
+        required=True,
+    )
+    directives.fieldset('data-connector', label="Data connector", fields=[
+        'endpoint_url', 'query',
+    ])
+
+
 alsoProvides(IMetadata, IFormFieldProvider)
 alsoProvides(IOptionalMetadata, IFormFieldProvider)

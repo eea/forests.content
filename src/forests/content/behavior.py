@@ -1,7 +1,9 @@
+import requests
+
 from plone.app.dexterity.behaviors.metadata import (DCFieldProperty,
                                                     MetadataBase)
 
-from .interfaces import IMetadata, IOptionalMetadata
+from .interfaces import IDataConnector, IMetadata, IOptionalMetadata
 
 
 class Metadata(MetadataBase):
@@ -32,3 +34,19 @@ class OptionalMetadata(MetadataBase):
 class DataConnector(MetadataBase):
     """ Allow data connectivity to discodata
     """
+
+    endpoint_url = DCFieldProperty(IDataConnector['endpoint_url'])
+    query = DCFieldProperty(IDataConnector['query'])
+
+    def _execute(self):
+        # query = urllib.parse.quote_plus(self.query)
+
+        return requests.post(self.endpoint_url, data={'sql':
+                                                      self.query}).json()
+
+    @property
+    def data(self):
+        if not self.query:
+            return []
+
+        return self._execute()
