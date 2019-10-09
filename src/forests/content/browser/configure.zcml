@@ -7,10 +7,11 @@
   i18n_domain="forests.content">
 
   <browser:page
-    name="data_connector_view"
+    name="view"
     for="forests.content.interfaces.IDataConnector"
     permission="zope2.View"
     template="pt/data_connector_view.pt"
+    class=".views.DataConnectorView"
     />
 
 </configure>

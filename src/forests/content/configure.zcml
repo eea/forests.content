@@ -58,6 +58,7 @@
     provides=".interfaces.IDataConnector"
     factory=".behavior.DataConnector"
     for="plone.dexterity.interfaces.IDexterityContent"
+    marker=".interfaces.IDataConnector"
     />
 
 
