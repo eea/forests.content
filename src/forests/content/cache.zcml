@@ -9,18 +9,16 @@
     xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="forests.content">
 
-    -----[ eea.cache integration ]-----------
-
-    <class class="collective.cover.content.Cover">
-        <implements interface="eea.cache.interfaces.ICacheAware" />
-    </class>
-
-    <class class="plone.app.contenttypes.content.NewsItem">
-        <implements interface="eea.cache.interfaces.ICacheAware" />
-    </class>
-
-    <class class="plone.app.contenttypes.content.Document">
-        <implements interface="eea.cache.interfaces.ICacheAware" />
-    </class>
+    <!-- <class class="collective.cover.content.Cover"> -->
+    <!--     <implements interface="eea.cache.interfaces.ICacheAware" /> -->
+    <!-- </class> -->
+    <!--  -->
+    <!-- <class class="plone.app.contenttypes.content.NewsItem"> -->
+    <!--     <implements interface="eea.cache.interfaces.ICacheAware" /> -->
+    <!-- </class> -->
+    <!--  -->
+    <!-- <class class="plone.app.contenttypes.content.Document"> -->
+    <!--     <implements interface="eea.cache.interfaces.ICacheAware" /> -->
+    <!-- </class> -->
 
 </configure>

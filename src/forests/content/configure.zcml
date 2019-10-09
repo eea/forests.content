@@ -1,15 +1,54 @@
 <configure
   xmlns="http://namespaces.zope.org/zope"
   xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+  xmlns:plone="http://namespaces.plone.org/plone"
   xmlns:i18n="http://namespaces.zope.org/i18n"
   i18n_domain="forests.content">
 
   <i18n:registerTranslations directory="locales" />
 
-  <!-- <includeDependencies package="." /> -->
+  <!-- <include package="plone.app.contentmenu" /> -->
+  <!-- <include file="cache.zcml" /> -->
 
-  <include package="plone.app.contentmenu" />
-  <include file="cache.zcml" />
+  <genericsetup:registerProfile
+    name="default"
+    title="forests.content"
+    directory="profiles/default"
+    description="Installs the forests.content add-on."
+    provides="Products.GenericSetup.interfaces.EXTENSION"
+    />
+
+  <genericsetup:registerProfile
+    name="uninstall"
+    title="forests.content (uninstall)"
+    directory="profiles/uninstall"
+    description="Uninstalls the forests.content add-on."
+    provides="Products.GenericSetup.interfaces.EXTENSION"
+    />
+
+  <utility
+    factory=".setuphandlers.HiddenProfiles"
+    name="forests.content-hiddenprofiles" />
+
+  <plone:behavior
+    name="forests.metadata"
+    title="Forests standard metadata"
+    description="Adds Forests specific metadata fields."
+    provides=".interfaces.IMetadata"
+    factory=".behavior.Metadata"
+    for="plone.dexterity.interfaces.IDexterityContent"
+    />
+
+  <plone:behavior
+    name="forests.optionalmetadata"
+    title="Forests optional metadata"
+    description="Adds Forests specific optional metadata fields."
+    provides=".interfaces.IOptionalMetadata"
+    factory=".behavior.OptionalMetadata"
+    for="plone.dexterity.interfaces.IDexterityContent"
+    />
+
+  <!-- <includeDependencies package="." /> -->
 
   <!-- Make content types PDF Aware -->
   <!-- <class class="collective.cover.content.Cover"> -->
@@ -28,46 +67,30 @@
   <!--   <implements interface="eea.pdf.interfaces.ICollectionPDFAware" /> -->
   <!-- </class> -->
 
-  <class class="plone.namedfile.field.NamedBlobImage">
-    <implements interface="plone.rfc822.interfaces.IPrimaryField" />
-  </class>
+  <!-- <class class="plone.namedfile.field.NamedBlobImage"> -->
+  <!--   <implements interface="plone.rfc822.interfaces.IPrimaryField" /> -->
+  <!-- </class> -->
 
-  <genericsetup:registerProfile
-    name="default"
-    title="forests.content"
-    directory="profiles/default"
-    description="Installs the forests.content add-on."
-    provides="Products.GenericSetup.interfaces.EXTENSION"
-    />
+  <!-- <genericsetup:registerProfile -->
+  <!--   name="forests" -->
+  <!--   title="forests.content (extra)" -->
+  <!--   directory="profiles/forests" -->
+  <!--   description="Extra content for the Forests website" -->
+  <!--   provides="Products.GenericSetup.interfaces.EXTENSION" -->
+  <!--   /> -->
 
-  <genericsetup:registerProfile
-    name="uninstall"
-    title="forests.content (uninstall)"
-    directory="profiles/uninstall"
-    description="Uninstalls the forests.content add-on."
-    provides="Products.GenericSetup.interfaces.EXTENSION"
-    />
-
-  <genericsetup:registerProfile
-    name="forests"
-    title="forests.content (extra)"
-    directory="profiles/forests"
-    description="Extra content for the Forests website"
-    provides="Products.GenericSetup.interfaces.EXTENSION"
-    />
-
-  <subscriber
-    for="plone.app.iterate.interfaces.IWorkingCopy
-         OFS.interfaces.IObjectWillBeRemovedEvent"
-    handler=".events.handle_iterate_wc_deletion"
-  />
-
-  <subscriber
-    for=".contenttypes.IRichImage
-         zope.lifecycleevent.interfaces.IObjectCreatedEvent"
-    handler=".events.set_title_description"
-  />
-
-  <adapter name="getObjSize" factory=".indexers.getObjSize_image" />
+  <!-- <subscriber -->
+  <!--   for="plone.app.iterate.interfaces.IWorkingCopy -->
+  <!--        OFS.interfaces.IObjectWillBeRemovedEvent" -->
+  <!--   handler=".events.handle_iterate_wc_deletion" -->
+  <!-- /> -->
+  <!--  -->
+  <!-- <subscriber -->
+  <!--   for=".contenttypes.IRichImage -->
+  <!--        zope.lifecycleevent.interfaces.IObjectCreatedEvent" -->
+  <!--   handler=".events.set_title_description" -->
+  <!-- /> -->
+  <!--  -->
+  <!-- <adapter name="getObjSize" factory=".indexers.getObjSize_image" /> -->
 
 </configure>
