@@ -14,4 +14,6 @@
     class=".views.DataConnectorView"
     />
 
+  <adapter name="connector-data" factory=".restapi.ConnectorData" />
+
 </configure>

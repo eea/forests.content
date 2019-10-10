@@ -33,6 +33,8 @@ class OptionalMetadata(MetadataBase):
 
 class DataConnector(MetadataBase):
     """ Allow data connectivity to discodata
+
+    See http://discomap.eea.europa.eu/App/SqlEndpoint/Browser.aspx
     """
 
     endpoint_url = DCFieldProperty(IDataConnector['endpoint_url'])
