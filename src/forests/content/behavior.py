@@ -7,14 +7,13 @@ import requests
 from zope.component import adapter
 from zope.interface import implementer
 
-from forests.content.interfaces import IDataProvider, IFileDataProvider
+from forests.content.interfaces import (IConnectorDataProvider, IDataConnector,
+                                        IDataProvider, IFileDataProvider,
+                                        IMetadata, IOptionalMetadata)
 from plone.app.dexterity.behaviors.metadata import (DCFieldProperty,
                                                     MetadataBase)
+from plone.dexterity.interfaces import IDexterityContent
 from plone.rfc822.interfaces import IPrimaryFieldInfo
-
-from .interfaces import IDataConnector, IMetadata, IOptionalMetadata
-
-# from plone.dexterity.interfaces import IDexterityContent
 
 logger = logging.getLogger(__name__)
 
@@ -44,6 +43,8 @@ class OptionalMetadata(MetadataBase):
     nuts_level = DCFieldProperty(IOptionalMetadata['nuts_level'])
 
 
+@implementer(IDataConnector)
+@adapter(IDexterityContent)
 class DataConnector(MetadataBase):
     """ Allow data connectivity to discodata
 
@@ -53,11 +54,19 @@ class DataConnector(MetadataBase):
     endpoint_url = DCFieldProperty(IDataConnector['endpoint_url'])
     query = DCFieldProperty(IDataConnector['query'])
 
+
+@adapter(IConnectorDataProvider)
+@implementer(IDataProvider)
+class DataProviderForConnectors(object):
+    def __init__(self, context):
+        self.context = context
+
     def _get_data(self):
         # query = urllib.parse.quote_plus(self.query)
 
         try:
-            req = requests.post(self.endpoint_url, data={'sql': self.query})
+            req = requests.post(self.context.endpoint_url,
+                                data={'sql': self.context.query})
             res = req.json()
         except Exception:
             logger.exception("Error in requestion data")
@@ -82,7 +91,7 @@ class DataConnector(MetadataBase):
 
     @property
     def provided_data(self):
-        if not self.query:
+        if not self.context.query:
             return []
 
         data = self._get_data()

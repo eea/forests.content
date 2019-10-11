@@ -36,7 +36,7 @@
     provides=".interfaces.IDataConnector"
     factory=".behavior.DataConnector"
     for="plone.dexterity.interfaces.IDexterityContent"
-    marker=".interfaces.IDataProvider"
+    marker=".interfaces.IConnectorDataProvider"
     />
 
   <plone:behavior
@@ -48,5 +48,7 @@
     for="plone.dexterity.interfaces.IDexterityContent"
     marker=".interfaces.IFileDataProvider"
     />
+
+  <adapter factory=".behavior.DataProviderForConnectors" />
 
 </configure>

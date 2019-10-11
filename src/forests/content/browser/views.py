@@ -2,14 +2,14 @@ from forests.content.interfaces import IDataProvider
 from Products.Five.browser import BrowserView
 
 
-class DataConnectorView(BrowserView):
+class DataProviderView(BrowserView):
     """ Basic view for the DataConnector
     """
 
     def data(self):
-        self.context = IDataProvider(self.context)
+        dataprovider = IDataProvider(self.context)
 
-        return self.context.provided_data
+        return dataprovider.provided_data
 
 
 class DebugView(BrowserView):

@@ -169,12 +169,17 @@ class IBasicDataProvider(Interface):
 
 
 class IDataProvider(IBasicDataProvider):
-    """ Marker interface for objects that provide data to visualizations
+    """ An export of data for remote purposes
     """
 
     provided_data = Attribute(u'Data made available by this data provider')
 
 
 class IFileDataProvider(IBasicDataProvider):
+    """ Marker interface for objects that provide data to visualizations
+    """
+
+
+class IConnectorDataProvider(IBasicDataProvider):
     """ Marker interface for objects that provide data to visualizations
     """

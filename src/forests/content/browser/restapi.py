@@ -1,12 +1,12 @@
 from zope.component import adapter
 from zope.interface import Interface, implementer
 
-from forests.content.interfaces import IDataProvider
+from forests.content.interfaces import IBasicDataProvider, IDataProvider
 from plone.restapi.interfaces import IExpandableElement
 
 
 @implementer(IExpandableElement)
-@adapter(IDataProvider, Interface)
+@adapter(IBasicDataProvider, Interface)
 class ConnectorData(object):
     def __init__(self, context, request):
         self.context = context

@@ -10,10 +10,9 @@
 
   <browser:page
     name="view"
-    for="forests.content.interfaces.IDataProvider"
+    for="forests.content.interfaces.IConnectorDataProvider"
     permission="zope2.View"
     template="pt/data_connector_view.pt"
-    class=".views.DataConnectorView"
     />
 
   <browser:page
@@ -21,7 +20,7 @@
     for="forests.content.interfaces.IBasicDataProvider"
     permission="zope2.View"
     template="pt/provided_data.pt"
-    class=".views.DataConnectorView"
+    class=".views.DataProviderView"
     />
 
   <browser:page
