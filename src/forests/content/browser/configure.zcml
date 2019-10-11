@@ -6,6 +6,8 @@
   xmlns:i18n="http://namespaces.zope.org/i18n"
   i18n_domain="forests.content">
 
+  <adapter name="connector-data" factory=".restapi.ConnectorData" />
+
   <browser:page
     name="view"
     for="forests.content.interfaces.IDataProvider"
@@ -14,6 +16,11 @@
     class=".views.DataConnectorView"
     />
 
-  <adapter name="connector-data" factory=".restapi.ConnectorData" />
+  <browser:page
+    name="gopdb"
+    for="*"
+    permission="cmf.ManagePortal"
+    class=".views.DebugView"
+    />
 
 </configure>

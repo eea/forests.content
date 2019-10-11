@@ -164,5 +164,17 @@ class IDataConnector(Interface):
 
 
 class IDataProvider(Interface):
-    """ Marker interface for objects that provide remote data
+    """ Marker interface for objects that provide data to visualizations
     """
+
+    provided_data = Attribute(u'Data made available by this data provider')
+
+
+class IFileDataProvider(Interface):
+    """ Marker interface for objects that provide data to visualizations
+    """
+
+
+# class IDataProviderForFilesBehavior(Interface):
+#     """ Allows content types with file primary fields to be IDataProvider
+#     """

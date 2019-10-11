@@ -1,4 +1,4 @@
-from forests.content.interfaces import IDataConnector
+from forests.content.interfaces import IDataProvider
 from Products.Five.browser import BrowserView
 
 
@@ -8,8 +8,17 @@ class DataConnectorView(BrowserView):
 
     def data(self):
         if self.context.query:
-            connector = IDataConnector(self.context)
+            self.context = IDataProvider(self.context)
 
-            return connector.data['results']
+            return self.context.data['results']
 
         return []
+
+
+class DebugView(BrowserView):
+    def __call__(self):
+
+        import pdb
+        pdb.set_trace()
+
+        return 'ok'

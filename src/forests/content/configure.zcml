@@ -8,30 +8,8 @@
   <i18n:registerTranslations directory="locales" />
   <includeDependencies package="." />
 
+  <include file="profiles.zcml" />
   <include package=".browser" />
-
-  <!-- <include package="plone.app.contentmenu" /> -->
-  <!-- <include file="cache.zcml" /> -->
-
-  <genericsetup:registerProfile
-    name="default"
-    title="forests.content"
-    directory="profiles/default"
-    description="Installs the forests.content add-on."
-    provides="Products.GenericSetup.interfaces.EXTENSION"
-    />
-
-  <genericsetup:registerProfile
-    name="uninstall"
-    title="forests.content (uninstall)"
-    directory="profiles/uninstall"
-    description="Uninstalls the forests.content add-on."
-    provides="Products.GenericSetup.interfaces.EXTENSION"
-    />
-
-  <utility
-    factory=".setuphandlers.HiddenProfiles"
-    name="forests.content-hiddenprofiles" />
 
   <plone:behavior
     name="forests.metadata"
@@ -53,7 +31,7 @@
 
   <plone:behavior
     name="discodata.connector"
-    title="Discodata connector"
+    title="Discodata connector behavior"
     description="Adds discodata connector query execution"
     provides=".interfaces.IDataConnector"
     factory=".behavior.DataConnector"
@@ -61,48 +39,14 @@
     marker=".interfaces.IDataProvider"
     />
 
-
-  <!-- Make content types PDF Aware -->
-  <!-- <class class="collective.cover.content.Cover"> -->
-  <!--   <implements interface="eea.pdf.interfaces.IPDFAware" /> -->
-  <!-- </class> -->
-  <!--  -->
-  <!-- <class class="plone.app.contenttypes.content.Document"> -->
-  <!--   <implements interface="eea.pdf.interfaces.IPDFAware" /> -->
-  <!-- </class> -->
-  <!--  -->
-  <!-- <class class="plone.dexterity.content.Container"> -->
-  <!--   <implements interface="eea.pdf.interfaces.IPDFAware" /> -->
-  <!-- </class> -->
-  <!--  -->
-  <!-- <class class="plone.dexterity.content.Container"> -->
-  <!--   <implements interface="eea.pdf.interfaces.ICollectionPDFAware" /> -->
-  <!-- </class> -->
-
-  <!-- <class class="plone.namedfile.field.NamedBlobImage"> -->
-  <!--   <implements interface="plone.rfc822.interfaces.IPrimaryField" /> -->
-  <!-- </class> -->
-
-  <!-- <genericsetup:registerProfile -->
-  <!--   name="forests" -->
-  <!--   title="forests.content (extra)" -->
-  <!--   directory="profiles/forests" -->
-  <!--   description="Extra content for the Forests website" -->
-  <!--   provides="Products.GenericSetup.interfaces.EXTENSION" -->
-  <!--   /> -->
-
-  <!-- <subscriber -->
-  <!--   for="plone.app.iterate.interfaces.IWorkingCopy -->
-  <!--        OFS.interfaces.IObjectWillBeRemovedEvent" -->
-  <!--   handler=".events.handle_iterate_wc_deletion" -->
-  <!-- /> -->
-  <!--  -->
-  <!-- <subscriber -->
-  <!--   for=".contenttypes.IRichImage -->
-  <!--        zope.lifecycleevent.interfaces.IObjectCreatedEvent" -->
-  <!--   handler=".events.set_title_description" -->
-  <!-- /> -->
-  <!--  -->
-  <!-- <adapter name="getObjSize" factory=".indexers.getObjSize_image" /> -->
+  <plone:behavior
+    name="dataprovider.files"
+    title="Data provider for files"
+    description="Allows Files to provide remote data"
+    provides=".interfaces.IDataProvider"
+    factory=".behavior.DataProviderForFiles"
+    for="plone.dexterity.interfaces.IDexterityContent"
+    marker=".interfaces.IFileDataProvider"
+    />
 
 </configure>
