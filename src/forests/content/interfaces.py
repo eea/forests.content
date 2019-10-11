@@ -163,18 +163,18 @@ class IDataConnector(Interface):
     # ])
 
 
-class IDataProvider(Interface):
+class IBasicDataProvider(Interface):
+    """ A data provider concept
+    """
+
+
+class IDataProvider(IBasicDataProvider):
     """ Marker interface for objects that provide data to visualizations
     """
 
     provided_data = Attribute(u'Data made available by this data provider')
 
 
-class IFileDataProvider(Interface):
+class IFileDataProvider(IBasicDataProvider):
     """ Marker interface for objects that provide data to visualizations
     """
-
-
-# class IDataProviderForFilesBehavior(Interface):
-#     """ Allows content types with file primary fields to be IDataProvider
-#     """

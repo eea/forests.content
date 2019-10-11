@@ -17,6 +17,14 @@
     />
 
   <browser:page
+    name="provided_data"
+    for="forests.content.interfaces.IBasicDataProvider"
+    permission="zope2.View"
+    template="pt/provided_data.pt"
+    class=".views.DataConnectorView"
+    />
+
+  <browser:page
     name="gopdb"
     for="*"
     permission="cmf.ManagePortal"

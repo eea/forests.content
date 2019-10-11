@@ -13,21 +13,7 @@
       <strong>Query:</strong>
       <pre tal:content="context/query">Query definition here</pre>
 
-      <strong>Data:</strong>
-      <div tal:define="data view/data; keys python: data and data[0].keys() or []">
-        <table tal:condition="data" class="table listing">
-          <thead>
-            <tr>
-              <td tal:repeat="k keys" tal:content="k">Label</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr tal:repeat="row data">
-              <td tal:repeat="k keys" tal:content="python: row[k]">Value</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <div tal:replace="structure context/@@provided_data" />
 
     </metal:main>
   </body>

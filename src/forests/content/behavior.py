@@ -121,7 +121,7 @@ class DataProviderForFiles(object):
         keys = rows[0]
         res = defaultdict(list)
 
-        for (k, i) in enumerate(keys):
+        for (i, k) in enumerate(keys):
             for row in rows[1:]:
                 res[k].append(row[i])
 

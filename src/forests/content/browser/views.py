@@ -7,12 +7,9 @@ class DataConnectorView(BrowserView):
     """
 
     def data(self):
-        if self.context.query:
-            self.context = IDataProvider(self.context)
+        self.context = IDataProvider(self.context)
 
-            return self.context.data['results']
-
-        return []
+        return self.context.provided_data
 
 
 class DebugView(BrowserView):
