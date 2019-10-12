@@ -185,11 +185,12 @@ class IConnectorDataProvider(IBasicDataProvider):
     """
 
 
+@provider(IFormFieldProvider)
 class IDataVizualization(model.Schema):
     """ A data vizualization (chart)
     """
 
     vizualization = schema.Text(
         title=u"JSON object with vizualization configuration",
-        required=True,
+        required=False,
     )
