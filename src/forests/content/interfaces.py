@@ -191,6 +191,6 @@ class IDataVizualization(model.Schema):
     """
 
     vizualization = schema.Text(
-        title=u"JSON object with vizualization configuration",
+        title=u"Vizualization",
         required=False,
     )
