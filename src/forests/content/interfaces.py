@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 """Module where all interfaces, events and exceptions live."""
 
+import json
+
 from zope import schema
 from zope.interface import Attribute, Interface, provider
 from zope.publisher.interfaces.browser import IDefaultBrowserLayer
@@ -8,6 +10,7 @@ from zope.publisher.interfaces.browser import IDefaultBrowserLayer
 from plone.app.z3cform.widget import AjaxSelectFieldWidget
 from plone.autoform import directives as form
 from plone.autoform.interfaces import IFormFieldProvider
+from plone.schema import JSONField
 from plone.supermodel import directives, model
 from z3c.formwidget.optgroup.widget import OptgroupFieldWidget
 
@@ -185,12 +188,14 @@ class IConnectorDataProvider(IBasicDataProvider):
     """
 
 
+VIZ_SCHEMA = json.dumps({"type": "object", "properties": {}})
+
+
 @provider(IFormFieldProvider)
 class IDataVizualization(model.Schema):
     """ A data vizualization (chart)
     """
 
-    vizualization = schema.Text(
-        title=u"Vizualization",
-        required=False,
-    )
+    vizualization = JSONField(title=u"Vizualization", required=False,
+                              default={},
+                              schema=VIZ_SCHEMA)
