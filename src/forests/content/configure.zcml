@@ -11,6 +11,8 @@
   <include file="profiles.zcml" />
   <include package=".browser" />
 
+  <adapter factory=".behavior.DataProviderForConnectors" />
+
   <plone:behavior
     name="forests.metadata"
     title="Forests standard metadata"
@@ -49,6 +51,13 @@
     marker=".interfaces.IFileDataProvider"
     />
 
-  <adapter factory=".behavior.DataProviderForConnectors" />
+  <plone:behavior
+    name="forests.vizualization"
+    title="Vizualization behavior"
+    description="Allows creating a vizualization."
+    provides=".interfaces.IDataVizualization"
+    factory=".behavior.DataVizualization"
+    for="plone.dexterity.interfaces.IDexterityContent"
+    />
 
 </configure>

@@ -145,7 +145,7 @@ class IComputedMetadata(Interface):
 
 
 @provider(IFormFieldProvider)
-class IDataConnector(Interface):
+class IDataConnector(model.Schema):
     """ A generic discodata connector
     """
 
@@ -183,3 +183,13 @@ class IFileDataProvider(IBasicDataProvider):
 class IConnectorDataProvider(IBasicDataProvider):
     """ Marker interface for objects that provide data to visualizations
     """
+
+
+class IDataVizualization(model.Schema):
+    """ A data vizualization (chart)
+    """
+
+    vizualization = schema.Text(
+        title=u"JSON object with vizualization configuration",
+        required=True,
+    )

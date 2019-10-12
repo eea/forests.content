@@ -8,8 +8,9 @@ from zope.component import adapter
 from zope.interface import implementer
 
 from forests.content.interfaces import (IConnectorDataProvider, IDataConnector,
-                                        IDataProvider, IFileDataProvider,
-                                        IMetadata, IOptionalMetadata)
+                                        IDataProvider, IDataVizualization,
+                                        IFileDataProvider, IMetadata,
+                                        IOptionalMetadata)
 from plone.app.dexterity.behaviors.metadata import (DCFieldProperty,
                                                     MetadataBase)
 from plone.dexterity.interfaces import IDexterityContent
@@ -135,3 +136,10 @@ class DataProviderForFiles(object):
                 res[k].append(row[i])
 
         return res
+
+
+class DataVizualization(MetadataBase):
+    """ Standard Fise Metadata adaptor
+    """
+
+    vizualization = DCFieldProperty(IDataVizualization['vizualization'])
