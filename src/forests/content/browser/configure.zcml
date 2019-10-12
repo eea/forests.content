@@ -10,6 +10,13 @@
 
   <browser:page
     name="view"
+    for="forests.content.interfaces.IDataVizualization"
+    permission="zope2.View"
+    template="pt/vizualization_view.pt"
+    />
+
+  <browser:page
+    name="view"
     for="forests.content.interfaces.IConnectorDataProvider"
     permission="zope2.View"
     template="pt/data_connector_view.pt"

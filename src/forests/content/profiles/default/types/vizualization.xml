@@ -12,12 +12,8 @@
  <property name="filter_content_types">True</property>
  <property name="allowed_content_types"/>
  <property name="allow_discussion">False</property>
- <property name="default_view">document_view</property>
+ <property name="default_view">view</property>
  <property name="view_methods">
-  <element value="document_view"/>
-  <element value="country_tab_view"/>
-  <element value="homepage_view"/>
-  <element value="mosaic_tiles_view"/>
  </property>
  <property name="default_view_fallback">False</property>
  <property name="add_permission">plone.app.contenttypes.addDocument</property>
@@ -36,7 +32,6 @@
   <element value="plone.locking"/>
   <element
      value="Products.CMFPlone.interfaces.constrains.ISelectableConstrainTypes"/>
-  <element value="plone.restapi.behaviors.ITiles"/>
   <element value="forests.optionalmetadata"/>
   <element value="forests.metadata"/>
   <element value="forests.vizualization"/>

@@ -58,6 +58,7 @@
     provides=".interfaces.IDataVizualization"
     factory=".behavior.DataVizualization"
     for="plone.dexterity.interfaces.IDexterityContent"
+    marker=".interfaces.IDataVizualization"
     />
 
 </configure>
