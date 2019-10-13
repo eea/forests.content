@@ -39,6 +39,11 @@
     />
 
   <utility
+    name="fise.info_levels"
+    component=".vocabulary.info_levels_vocabulary"
+    />
+
+  <utility
     name="fise.topics"
     component=".vocabulary.TopicsVocabularyFactory"
     />
