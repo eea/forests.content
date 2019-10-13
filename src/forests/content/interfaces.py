@@ -192,10 +192,10 @@ VIZ_SCHEMA = json.dumps({"type": "object", "properties": {}})
 
 
 @provider(IFormFieldProvider)
-class IDataVizualization(model.Schema):
-    """ A data vizualization (chart)
+class IDataVisualization(model.Schema):
+    """ A data visualization (chart)
     """
 
-    vizualization = JSONField(title=u"Vizualization", required=False,
+    visualization = JSONField(title=u"Visualization", required=False,
                               default={},
                               schema=VIZ_SCHEMA)

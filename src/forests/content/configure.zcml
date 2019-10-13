@@ -52,13 +52,13 @@
     />
 
   <plone:behavior
-    name="forests.vizualization"
-    title="Vizualization behavior"
-    description="Allows creating a vizualization."
-    provides=".interfaces.IDataVizualization"
-    factory=".behavior.DataVizualization"
+    name="forests.visualization"
+    title="Visualization behavior"
+    description="Allows creating a visualization."
+    provides=".interfaces.IDataVisualization"
+    factory=".behavior.DataVisualization"
     for="plone.dexterity.interfaces.IDexterityContent"
-    marker=".interfaces.IDataVizualization"
+    marker=".interfaces.IDataVisualization"
     />
 
 </configure>

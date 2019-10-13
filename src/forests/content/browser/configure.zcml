@@ -10,9 +10,9 @@
 
   <browser:page
     name="view"
-    for="forests.content.interfaces.IDataVizualization"
+    for="forests.content.interfaces.IDataVisualization"
     permission="zope2.View"
-    template="pt/vizualization_view.pt"
+    template="pt/visualization_view.pt"
     />
 
   <browser:page

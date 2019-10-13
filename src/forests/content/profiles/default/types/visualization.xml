@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object name="vizualization" meta_type="Dexterity FTI" i18n:domain="plone"
+<object name="visualization" meta_type="Dexterity FTI" i18n:domain="plone"
    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
- <property name="title" i18n:translate="">Vizualization</property>
+ <property name="title" i18n:translate="">Visualization</property>
  <property name="icon_expr"></property>
- <property name="factory">vizualization</property>
+ <property name="factory">visualization</property>
  <property
-    name="add_view_expr">string:${folder_url}/++add++vizualization</property>
+    name="add_view_expr">string:${folder_url}/++add++visualization</property>
  <property name="link_target"></property>
  <property name="immediate_view">view</property>
  <property name="global_allow">True</property>
@@ -34,7 +34,7 @@
      value="Products.CMFPlone.interfaces.constrains.ISelectableConstrainTypes"/>
   <element value="forests.optionalmetadata"/>
   <element value="forests.metadata"/>
-  <element value="forests.vizualization"/>
+  <element value="forests.visualization"/>
  </property>
  <property name="schema"></property>
  <property name="model_source"></property>
