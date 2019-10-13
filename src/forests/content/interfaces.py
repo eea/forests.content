@@ -60,9 +60,16 @@ class IMetadata(model.Schema):
     dataset = schema.Choice(title=u"Dataset", vocabulary="fise.datasets",
                             required=False)
 
-    publisher = schema.TextLine(
+    # publisher = schema.TextLine(
+    #     title=u"Publisher",
+    #     required=False,
+    # )
+    publisher = schema.Tuple(
         title=u"Publisher",
+        value_type=schema.TextLine(),
         required=False,
+        missing_value=(),
+        default=(),
     )
     form.widget(        # text with autocomplete
         'publisher',
