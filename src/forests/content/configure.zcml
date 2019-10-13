@@ -9,6 +9,7 @@
   <includeDependencies package="." />
 
   <include file="profiles.zcml" />
+  <include file="vocabulary.zcml" />
   <include package=".browser" />
 
   <adapter factory=".behavior.DataProviderForConnectors" />

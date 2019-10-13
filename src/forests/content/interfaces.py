@@ -115,7 +115,7 @@ class IMetadata(model.Schema):
     )
 
     info_level = schema.Choice(title=u"Info level",
-                               values=('A', 'B', 'C', 'D', 'E'),
+                               vocabulary='fise.info_levels',
                                required=False,)
 
     accessibility_level = schema.Choice(title=u'Accesibility levels',
