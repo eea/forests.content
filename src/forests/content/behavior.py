@@ -53,7 +53,7 @@ class DataConnector(MetadataBase):
     """
 
     endpoint_url = DCFieldProperty(IDataConnector['endpoint_url'])
-    query = DCFieldProperty(IDataConnector['query'])
+    sql_query = DCFieldProperty(IDataConnector['sql_query'])
 
 
 @adapter(IConnectorDataProvider)
@@ -67,7 +67,7 @@ class DataProviderForConnectors(object):
 
         try:
             req = requests.post(self.context.endpoint_url,
-                                data={'sql': self.context.query})
+                                data={'sql': self.context.sql_query})
             res = req.json()
         except Exception:
             logger.exception("Error in requestion data")
@@ -92,7 +92,7 @@ class DataProviderForConnectors(object):
 
     @property
     def provided_data(self):
-        if not self.context.query:
+        if not self.context.sql_query:
             return []
 
         data = self._get_data()

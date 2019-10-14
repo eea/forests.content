@@ -163,7 +163,7 @@ class IDataConnector(model.Schema):
         title=u"Discodata endpoint URL", required=True,
         default=u"http://discomap.eea.europa.eu/App/SqlEndpoint/query"
     )
-    query = schema.Text(
+    sql_query = schema.Text(
         title=u"SQL Query",
         required=True,
     )
