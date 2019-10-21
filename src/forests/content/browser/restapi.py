@@ -1,13 +1,18 @@
+# -*- coding: utf-8 -*-
+
 import json
 
 from zope.component import adapter, getMultiAdapter
-from zope.interface import Interface, implementer
+from zope.interface import Interface, implementer, providedBy
 
 from forests.content.interfaces import IBasicDataProvider, IDataProvider
-# -*- coding: utf-8 -*-
+from forests.theme.interfaces import IForestsThemeLayer
+from plone.dexterity.interfaces import IDexterityContainer, IDexterityContent
 from plone.restapi.batching import HypermediaBatch
 from plone.restapi.interfaces import (IExpandableElement, ISerializeToJson,
                                       ISerializeToJsonSummary)
+from plone.restapi.serializer.dxcontent import (SerializeFolderToJson,
+                                                SerializeToJson)
 from plone.restapi.serializer.expansion import expandable_elements
 from Products.CMFCore.utils import getToolByName
 from Products.CMFPlone.interfaces import IPloneSiteRoot
@@ -102,5 +107,29 @@ class SerializeSiteRootToJson(object):
 
             for brain in batch
         ]
+        result['@provides'] = ['{}.{}'.format(I.__module__, I.__name__)
+                               for I in providedBy(self.context)]
 
         return result
+
+
+@adapter(IDexterityContent, IForestsThemeLayer)
+class DexterityContentSerializer(SerializeToJson):
+    def __call__(self, version=None, include_items=True):
+        res = super(DexterityContentSerializer, self).__call__(version,
+                                                               include_items)
+        res['@provides'] = ['{}.{}'.format(I.__module__, I.__name__)
+                            for I in providedBy(self.context)]
+
+        return res
+
+
+@adapter(IDexterityContainer, IForestsThemeLayer)
+class DexterityContainerSerializer(SerializeFolderToJson):
+    def __call__(self, version=None, include_items=True):
+        res = super(DexterityContainerSerializer, self).__call__(version,
+                                                                 include_items)
+        res['@provides'] = ['{}.{}'.format(I.__module__, I.__name__)
+                            for I in providedBy(self.context)]
+
+        return res
