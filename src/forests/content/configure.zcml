@@ -11,7 +11,7 @@
   <include file="profiles.zcml" />
   <include file="vocabulary.zcml" />
   <include package=".browser" />
-  <include package=".slides" />
+  <include package=".attachments" />
 
   <adapter factory=".behavior.DataProviderForConnectors" />
 

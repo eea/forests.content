@@ -1,15 +1,8 @@
-from zope.interface import Interface
+# BBB
 
-# class ISliderImagesBehavior(Interface):
-#     """ Behavior for slider images
-#     """
+from zope.interface import Interface
 
 
 class IHasSliderImages(Interface):
-    """ Marker interface for objects that provide slider images
     """
-
-
-class ISliderImagesStorage(Interface):
-    """ Annotation based storage for slider images
     """

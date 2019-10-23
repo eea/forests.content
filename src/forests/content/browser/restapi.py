@@ -42,7 +42,7 @@ class ConnectorData(object):
 
 
 @implementer(ISerializeToJson)
-@adapter(IPloneSiteRoot, Interface)
+@adapter(IPloneSiteRoot, IForestsThemeLayer)
 class SerializeSiteRootToJson(object):
     def __init__(self, context, request):
         self.context = context
