@@ -15,6 +15,44 @@ from .interfaces import (IAttachedFile, IAttachedImage, IAttachment,
 
 
 @implementer(ISerializeToJson)
+@adapter(IAttachmentStorage, Interface)
+class SerializeStorageToJson(SerializeToJson):
+
+    def __call__(self, version=None, include_items=True):
+        result = {}
+        # parent = self.context.__parent__
+
+        # ILocation provided by the adapter locate=true registration
+        context = self.context.__of__(self.context.__parent__)
+        result['@id'] = '{}/@attachments'.format(
+            self.context.__parent__.absolute_url())
+        result['items'] = []
+
+        for folder in context.values():
+            folder = folder.__of__(context)
+            fs = getMultiAdapter((folder, self.request), ISerializeToJson)()
+            result['items'].append(fs)
+
+        return result
+
+
+@implementer(ISerializeToJson)
+@adapter(IAttachmentFolder, Interface)
+class SerializeAttachmentFolderToJson(SerializeToJson):
+
+    def __call__(self, version=None, include_items=True):
+        result = {}
+        result['@id'] = self.context.__name__
+        result['items'] = []
+
+        for folder in self.context.values():
+            fs = getMultiAdapter((folder, self.request), ISerializeToJson)()
+            result['items'].append(fs)
+
+        return result
+
+
+@implementer(ISerializeToJson)
 @adapter(IAttachment, Interface)
 class SerializeAttachmentToJson(object):
     def __init__(self, context, request):
@@ -51,7 +89,7 @@ class SerializeAttachmentToJson(object):
 
 @adapter(INamedFileField, IAttachment, Interface)
 @implementer(IFieldSerializer)
-class AttachmentFileSerializer(DefaultFieldSerializer):
+class AttachmentFieldSerializer(DefaultFieldSerializer):
 
     def __call__(self):
         namedfile = self.field.get(self.context)
@@ -60,14 +98,7 @@ class AttachmentFileSerializer(DefaultFieldSerializer):
             return None
 
         ctype = namedfile.contentType
-        # obj = self.context.__parent__.__parent__.__of__(self.context)
         obj = self.context
-        # "@id":
-        #     "http://localhost:8085/about/++attachment++slider-images/f.2019-10-23.6863976284",
-        #     "file": {
-        #         "content-type": "image/jpeg",
-        #         "download":
-        #         "%2B%2Battachment%2B%2Bslider-images/f.2019-10-23.6863976284/about/@@images/35512ec7-9ace-4612-9d5b-4bd56d1aec10.jpeg",
 
         if 'image' in ctype:
             try:
@@ -82,41 +113,3 @@ class AttachmentFileSerializer(DefaultFieldSerializer):
         res['@id'] = '{}'.format(self.request.physicalPathToURL(path))
 
         return res
-
-
-@implementer(ISerializeToJson)
-@adapter(IAttachmentStorage, Interface)
-class SerializeStorageToJson(SerializeToJson):
-
-    def __call__(self, version=None, include_items=True):
-        result = {}
-        # parent = self.context.__parent__
-
-        # ILocation provided by the adapter locate=true registration
-        context = self.context.__of__(self.context.__parent__)
-        result['@id'] = '{}/@attachments'.format(
-            self.context.__parent__.absolute_url())
-        result['items'] = []
-
-        for folder in context.values():
-            folder = folder.__of__(context)
-            fs = getMultiAdapter((folder, self.request), ISerializeToJson)()
-            result['items'].append(fs)
-
-        return result
-
-
-@implementer(ISerializeToJson)
-@adapter(IAttachmentFolder, Interface)
-class SerializeAttachmentFolderToJson(SerializeToJson):
-
-    def __call__(self, version=None, include_items=True):
-        result = {}
-        result['@id'] = self.context.__name__
-        result['items'] = []
-
-        for folder in self.context.values():
-            fs = getMultiAdapter((folder, self.request), ISerializeToJson)()
-            result['items'].append(fs)
-
-        return result

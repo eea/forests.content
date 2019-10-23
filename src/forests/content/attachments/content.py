@@ -43,13 +43,8 @@ class AttachmentFolder(OrderedFolder, Implicit):
         # override, to be able to provide a fake name for the physical path
         # should probably set this as folder id
         path = super(AttachmentFolder, self).getPhysicalPath()
-        path = () + path[:-1] + ('++attachment++' + path[-1], )
+
+        res = tuple([''] + [bit for bit in path[1:] if bit])
+        path = () + res[:-1] + ('++attachment++' + path[-1], )
 
         return path
-
-
-# class Fake(Implicit):
-#     def __init__(self, name, parent):
-#         super(Fake, self).__init__()
-#         self.id = self.__name__ = self
-#         self.__parent__ = parent

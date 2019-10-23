@@ -93,8 +93,8 @@
     for="zope.schema.interfaces.ICollection .interfaces.IAttachment zope.interface.Interface" />
   <adapter factory="plone.restapi.serializer.dxfields.RichttextFieldSerializer"
     for="plone.app.textfield.interfaces.IRichText .interfaces.IAttachment zope.interface.Interface" />
-  <adapter factory=".serializer.AttachmentFileSerializer" />
-  <adapter factory=".serializer.AttachmentFileSerializer"
+  <adapter factory=".serializer.AttachmentFieldSerializer" />
+  <adapter factory=".serializer.AttachmentFieldSerializer"
     for="plone.namedfile.interfaces.INamedImageField .interfaces.IAttachment zope.interface.Interface" />
 
 </configure>
