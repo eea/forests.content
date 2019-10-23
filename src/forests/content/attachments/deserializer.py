@@ -9,7 +9,7 @@ from plone.restapi.interfaces import IDeserializeFromJson, IFieldDeserializer
 from z3c.form.interfaces import IDataManager, IManagerValidator
 from zExceptions import BadRequest
 
-from .interfaces import IAttachment
+from .interfaces import IAttachedFile, IAttachedImage, IAttachment
 
 
 @implementer(IDeserializeFromJson)
@@ -47,6 +47,11 @@ class DeserializeFromJson(OrderingMixin, object):
 
     def get_schema_data(self, data, validate_all):
         schema = IAttachment
+
+        if IAttachedFile.providedBy(self.context):
+            schema = IAttachedFile
+        elif IAttachedImage.providedBy(self.context):
+            schema = IAttachedImage
 
         schema_data = {}
         errors = []

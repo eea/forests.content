@@ -16,14 +16,10 @@ class AttachmentTraversing(SimpleHandler):
 
         # Note: also fixes possible unicode problems
         attach_name = urllib.parse.quote(name)
-        container = self.name
 
         storage = IAttachmentStorage(self.context)
 
-        if container not in storage:
+        if attach_name not in storage:
             raise NotFound
 
-        if attach_name not in storage[container]:
-            raise NotFound
-
-        return storage[container][attach_name]
+        return storage[attach_name]

@@ -41,14 +41,17 @@
     />
 
   <adapter factory=".storage.slides_annotation_storage" />
-  <adapter factory=".storage.attachments_annotation_storage" />
+  <adapter factory=".storage.attachments_annotation_storage" locate="True"/>
 
   <adapter factory=".deserializer.DeserializeFromJson" />
-  <adapter factory=".serializer.SerializeToJson" />
+
+  <adapter factory=".serializer.SerializeAttachmentToJson" />
+  <adapter factory=".serializer.SerializeStorageToJson" />
+  <adapter factory=".serializer.SerializeAttachmentFolderToJson" />
 
   <adapter
     name="attachment"
-    for="* zope.publisher.interfaces.IRequest"
+    for=".interfaces.IHasAttachments zope.publisher.interfaces.IRequest"
     provides="zope.traversing.interfaces.ITraversable"
     factory=".traversing.AttachmentTraversing"
     />
@@ -90,7 +93,6 @@
     for="zope.schema.interfaces.ICollection .interfaces.IAttachment zope.interface.Interface" />
   <adapter factory="plone.restapi.serializer.dxfields.RichttextFieldSerializer"
     for="plone.app.textfield.interfaces.IRichText .interfaces.IAttachment zope.interface.Interface" />
-
   <adapter factory=".serializer.AttachmentFileSerializer" />
   <adapter factory=".serializer.AttachmentFileSerializer"
     for="plone.namedfile.interfaces.INamedImageField .interfaces.IAttachment zope.interface.Interface" />

@@ -1,7 +1,7 @@
 from zope.interface import Interface
 
 from plone.app.textfield import RichText
-from plone.namedfile.field import NamedBlobImage
+from plone.namedfile.field import NamedBlobFile, NamedBlobImage
 from plone.supermodel import model
 
 # class ISliderImagesBehavior(Interface):
@@ -29,10 +29,27 @@ class IAttachmentStorage(Interface):
     """
 
 
+class IAttachmentFolder(Interface):
+    """
+    """
+
+
 class IAttachment(model.Schema):
     """
     """
 
+    file = NamedBlobFile(title=u'Attached file',
+                         description=u'', required=True)
+    text = RichText(title=u"Text", description=u'', required=False)
+
+
+class IAttachedImage(IAttachment):
+    """
+    """
     file = NamedBlobImage(title=u'Attached file',
                           description=u'', required=True)
-    text = RichText(title=u"Text", description=u'', required=False)
+
+
+class IAttachedFile(IAttachment):
+    """
+    """

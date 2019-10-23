@@ -10,9 +10,8 @@ from plone.restapi.exceptions import DeserializationError
 from plone.restapi.interfaces import IDeserializeFromJson, ISerializeToJson
 from plone.restapi.services import Service
 from plone.restapi.services.content.get import ContentGet
-from zExceptions import BadRequest, Unauthorized
 
-from .content import Attachment, AttachmentFolder
+from .content import AttachedFile, AttachedImage, AttachmentFolder
 from .interfaces import IAttachmentStorage
 
 
@@ -22,17 +21,20 @@ class AttachmentsPOST(Service):
 
     def reply(self):
         data = json_body(self.request)
-        container = data['@container']
+        container = str(data['@container'])
+
         storage = IAttachmentStorage(self.context)
+        storage = storage.__of__(self.context)
 
         if container not in storage.keys():
             folder = AttachmentFolder()
-            folder.__name__ = container
-            folder.__parent__ = self.context
-            folder.id = container
+            folder.__name__ = folder.id = container
+            # folder.__parent__ = self.context
             storage[container] = folder
         else:
             folder = storage[container]
+
+        folder = folder.__of__(storage)
 
         # Disable CSRF protection
 
@@ -40,18 +42,13 @@ class AttachmentsPOST(Service):
             alsoProvides(
                 self.request, plone.protect.interfaces.IDisableCSRFProtection)
 
-        try:
-            obj = Attachment()
-        except Unauthorized as exc:
-            self.request.response.setStatus(403)
+        if 'image' in data['file']['content-type']:
+            obj = AttachedImage()
+        else:
+            obj = AttachedFile()
 
-            return dict(error=dict(type="Forbidden", message=str(exc)))
-        except BadRequest as exc:
-            self.request.response.setStatus(400)
+        obj = obj.__of__(folder)
 
-            return dict(error=dict(type="Bad Request", message=str(exc)))
-
-        obj = Attachment()
         now = DateTime()
 
         # # Update fields
@@ -77,7 +74,7 @@ class AttachmentsPOST(Service):
             str(now.millis())[7:],
             randint(0, 9999),
         )
-        obj.__parent__ = folder
+        # obj.__parent__ = folder
         obj.__name__ = _id
         obj.id = _id
         folder[_id] = obj
@@ -105,6 +102,7 @@ class AttachmentsGET(Service):
     def reply(self):
 
         storage = IAttachmentStorage(self.context)
+        storage = storage.__of__(self.context)
 
         service = ContentGet()
         service.context = storage

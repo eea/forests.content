@@ -3,6 +3,9 @@ from zope.annotation.factory import factory
 from zope.component import adapter
 from zope.interface import implements
 
+from Acquisition import Implicit
+from OFS.Folder import Folder
+
 from .interfaces import (IAttachmentStorage, IHasAttachments, IHasSliderImages,
                          ISliderImagesStorage)
 
@@ -21,7 +24,7 @@ slides_annotation_storage = factory(SliderImages, key=SLIDER_KEY)
 
 
 @adapter(IHasAttachments)
-class AttachmentStorage(PersistentMapping):
+class AttachmentStorage(Folder, Implicit):
     """ Slider images stored in a persistent mapping
     """
     implements(IAttachmentStorage)
