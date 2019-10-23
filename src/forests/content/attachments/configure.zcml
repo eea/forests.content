@@ -9,8 +9,16 @@
   <plone:service
     method="POST"
     for="Products.CMFCore.interfaces.IFolderish"
-    factory=".restapi.ContentPost"
+    factory=".restapi.AttachmentsPOST"
     permission="cmf.ModifyPortalContent"
+    name="@attachments"
+    />
+
+  <plone:service
+    method="GET"
+    for="Products.CMFCore.interfaces.IFolderish"
+    factory=".restapi.AttachmentsGET"
+    permission="zope2.View"
     name="@attachments"
     />
 

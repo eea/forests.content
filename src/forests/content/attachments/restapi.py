@@ -9,13 +9,14 @@ from plone.restapi.deserializer import json_body
 from plone.restapi.exceptions import DeserializationError
 from plone.restapi.interfaces import IDeserializeFromJson, ISerializeToJson
 from plone.restapi.services import Service
+from plone.restapi.services.content.get import ContentGet
 from zExceptions import BadRequest, Unauthorized
 
 from .content import Attachment, AttachmentFolder
 from .interfaces import IAttachmentStorage
 
 
-class ContentPost(Service):
+class AttachmentsPOST(Service):
     """ Creates a new content object.
     """
 
@@ -95,3 +96,18 @@ class ContentPost(Service):
         serialized_obj = serializer()
 
         return serialized_obj
+
+
+class AttachmentsGET(Service):
+    """ Get the available transactions
+    """
+
+    def reply(self):
+
+        storage = IAttachmentStorage(self.context)
+
+        service = ContentGet()
+        service.context = storage
+        service.request = self.request
+
+        return service.reply()
