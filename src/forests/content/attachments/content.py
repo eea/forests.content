@@ -4,6 +4,7 @@ from zope.schema.fieldproperty import FieldProperty
 from Acquisition import Implicit
 from OFS.OrderedFolder import OrderedFolder
 from OFS.SimpleItem import SimpleItem
+from Products.CMFCore.interfaces import IContentish
 
 from .interfaces import (IAttachedFile, IAttachedImage, IAttachment,
                          IAttachmentFolder)
@@ -12,7 +13,7 @@ from .interfaces import (IAttachedFile, IAttachedImage, IAttachment,
 class Attachment(SimpleItem):
     """ Attachment implementation
     """
-    implements(IAttachment)
+    implements(IAttachment, IContentish)
 
     file = FieldProperty(IAttachment['file'])
     text = FieldProperty(IAttachment['text'])

@@ -4,7 +4,10 @@ from zope.component import queryMultiAdapter
 from zope.interface import alsoProvides
 
 import plone.protect.interfaces
+from Acquisition import aq_parent
 from DateTime import DateTime
+from plone.app.linkintegrity.exceptions import \
+    LinkIntegrityNotificationException
 from plone.restapi.deserializer import json_body
 from plone.restapi.exceptions import DeserializationError
 from plone.restapi.interfaces import IDeserializeFromJson, ISerializeToJson
@@ -100,12 +103,26 @@ class AttachmentsGET(Service):
     """
 
     def reply(self):
-
         storage = IAttachmentStorage(self.context)
         storage = storage.__of__(self.context)
 
         service = ContentGet()
+
         service.context = storage
         service.request = self.request
 
         return service.reply()
+
+
+class AttachmentDELETE(Service):
+    """ Delete an attachment
+    """
+
+    def reply(self):
+        parent = aq_parent(self.context)
+        try:
+            parent.manage_delObjects([self.context.getId()])
+        except LinkIntegrityNotificationException:
+            pass
+
+        return self.reply_no_content()
