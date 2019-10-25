@@ -111,4 +111,8 @@
   <adapter factory=".serializer.AttachmentFieldSerializer"
     for="plone.namedfile.interfaces.INamedImageField .interfaces.IAttachment zope.interface.Interface" />
 
+    <!-- Other compatibility -->
+  <adapter factory="plone.restapi.serializer.converters.RichtextDXContextConverter"
+    for="plone.app.textfield.interfaces.IRichTextValue .interfaces.IAttachment" />
+
 </configure>
