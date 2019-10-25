@@ -22,13 +22,6 @@
     name="@attachments"
     />
 
-  <!-- <plone:service -->
-  <!--   method="DELETE" -->
-  <!--   for=".interfaces.IAttachment" -->
-  <!--   factory=".restapi.AttachmentDELETE" -->
-  <!--   permission="zope2.DeleteObjects" -->
-  <!--   /> -->
-
   <plone:behavior
     name="slider-images"
     title="Restapi based slider images"

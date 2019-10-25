@@ -80,7 +80,7 @@ class AttachmentsPOST(Service):
         folder[_id] = obj
 
         self.request.response.setStatus(201)
-        # self.request.response.setHeader("Location", obj.absolute_url())
+        self.request.response.setHeader("Location", obj.absolute_url())
 
         serializer = queryMultiAdapter((obj, self.request), ISerializeToJson)
 
@@ -109,20 +109,3 @@ class AttachmentsGET(Service):
         service.request = self.request
 
         return service.reply()
-
-
-# from Acquisition import aq_parent
-# from plone.app.linkintegrity.exceptions import \
-#     LinkIntegrityNotificationException
-# class AttachmentDELETE(Service):
-#     """ Delete an attachment
-#     """
-#
-#     def reply(self):
-#         parent = aq_parent(self.context)
-#         try:
-#             parent.manage_delObjects([self.context.getId()])
-#         except LinkIntegrityNotificationException:
-#             pass
-#
-#         return self.reply_no_content()
