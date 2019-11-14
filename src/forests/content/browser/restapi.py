@@ -89,7 +89,7 @@ class SerializeSiteRootToJson(object):
         # We want to expose the layout property
         # The override might not be needed, I think (Interface) in the
         # descriminator is the browser layer.
-        layout = getattr(self.context, 'layout')
+        layout = getattr(self.context, 'layout', None)
 
         if layout:
             result["layout"] = layout
