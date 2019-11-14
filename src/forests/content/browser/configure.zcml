@@ -7,10 +7,6 @@
   i18n_domain="forests.content">
 
   <adapter name="connector-data" factory=".restapi.ConnectorData" />
-  <adapter factory=".restapi.DexterityContentSerializer" />
-  <adapter factory=".restapi.DexterityContainerSerializer" />
-  <adapter factory=".restapi.SerializeSiteRootToJson" />
-
 
   <browser:page
     name="view"
