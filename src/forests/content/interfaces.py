@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """Module where all interfaces, events and exceptions live."""
 
-import json
-
 from zope import schema
 from zope.interface import Attribute, Interface, provider
 from zope.publisher.interfaces.browser import IDefaultBrowserLayer
@@ -10,7 +8,6 @@ from zope.publisher.interfaces.browser import IDefaultBrowserLayer
 from plone.app.z3cform.widget import AjaxSelectFieldWidget
 from plone.autoform import directives as form
 from plone.autoform.interfaces import IFormFieldProvider
-from plone.schema import JSONField
 from plone.supermodel import directives, model
 from z3c.formwidget.optgroup.widget import OptgroupFieldWidget
 
@@ -152,57 +149,3 @@ class IComputedMetadata(Interface):
     """
 
     resource_format = Attribute(u'Extracted from file extension')
-
-
-@provider(IFormFieldProvider)
-class IDataConnector(model.Schema):
-    """ A generic discodata connector
-    """
-
-    endpoint_url = schema.TextLine(
-        title=u"Discodata endpoint URL", required=True,
-        default=u"http://discomap.eea.europa.eu/App/SqlEndpoint/query"
-    )
-    sql_query = schema.Text(
-        title=u"SQL Query",
-        required=True,
-    )
-
-    # directives.fieldset('dataconnector', label="Data connector", fields=[
-    #     'endpoint_url', 'query',
-    # ])
-
-
-class IBasicDataProvider(Interface):
-    """ A data provider concept
-    """
-
-
-class IDataProvider(IBasicDataProvider):
-    """ An export of data for remote purposes
-    """
-
-    provided_data = Attribute(u'Data made available by this data provider')
-
-
-class IFileDataProvider(IBasicDataProvider):
-    """ Marker interface for objects that provide data to visualizations
-    """
-
-
-class IConnectorDataProvider(IBasicDataProvider):
-    """ Marker interface for objects that provide data to visualizations
-    """
-
-
-VIZ_SCHEMA = json.dumps({"type": "object", "properties": {}})
-
-
-@provider(IFormFieldProvider)
-class IDataVisualization(model.Schema):
-    """ A data visualization (chart)
-    """
-
-    visualization = JSONField(title=u"Visualization", required=False,
-                              default={},
-                              schema=VIZ_SCHEMA)
