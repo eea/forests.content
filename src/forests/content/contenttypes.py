@@ -75,3 +75,13 @@
 #
 #     def content_type(self):
 #         return getattr(self.image, 'contentType', None)
+
+
+# Folder -> default view is listing
+#        -> edit as composite page
+# "Composite Page"
+# Page
+# News Item
+#
+
+# replace default Volto toolbar with our own

@@ -2,7 +2,7 @@
 <metadata>
   <version>1.0</version>
   <dependencies>
-    <!-- <dependency>profile&#45;plone.app.dexterity:default</dependency> -->
+    <dependency>profile-collective.taxonomy:default</dependency>
     <!-- <dependency>profile&#45;plone.app.contenttypes:default</dependency> -->
     <!-- <dependency>profile&#45;collective.cover:default</dependency> -->
     <!-- <dependency>profile&#45;eea.facetednavigation:default</dependency> -->
