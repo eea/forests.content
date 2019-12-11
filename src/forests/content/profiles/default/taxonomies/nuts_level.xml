@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<vdex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.imsglobal.org/xsd/imsvdex_v1p0" language="en" orderSignificant="false" profileType="hierarchicalTokenTerms" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsvdex_v1p0 imsvdex_v1p0.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd">
+  <vocabName>
+    <langstring language="en">NUTS Level</langstring>
+  </vocabName>
+  <vocabIdentifier>NUTS_LEVEL</vocabIdentifier>
+  <term>
+    <termIdentifier>nuts_level0</termIdentifier>
+    <caption>
+      <langstring language="en">Level 0</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>nuts_level1</termIdentifier>
+    <caption>
+      <langstring language="en">Level 1</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>nuts_level2</termIdentifier>
+    <caption>
+      <langstring language="en">Level 2</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>nuts_level3</termIdentifier>
+    <caption>
+      <langstring language="en">Level 3</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>nuts_level4</termIdentifier>
+    <caption>
+      <langstring language="en">Level 4</langstring>
+    </caption>
+  </term>
+</vdex>
