@@ -5,7 +5,7 @@
   </vocabName>
   <vocabIdentifier>RESOURCE_TYPE</vocabIdentifier>
   <term>
-    <termIdentifier>RASTED_DATA</termIdentifier>
+    <termIdentifier>RASTER_DATA</termIdentifier>
     <caption>
       <langstring language="en">Raster data</langstring>
     </caption>
