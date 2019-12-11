@@ -37,10 +37,11 @@ class IMetadata(model.Schema):
         'accessibility_level',
     ])
 
-    resource_type = schema.Choice(title=u'Resource type',
-                                  vocabulary="fise.resource_types",
-                                  required=False,
-                                  )
+    resource_type = schema.Choice(
+        title=u'Resource type',
+        vocabulary="collective.taxonomy.resource_type",
+        required=False,
+    )
 
     data_source = schema.Choice(
         title=u"Data Source",
