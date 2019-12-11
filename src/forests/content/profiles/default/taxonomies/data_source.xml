@@ -3,7 +3,7 @@
   <vocabName>
     <langstring language="en">Data Sources</langstring>
   </vocabName>
-  <vocabIdentifier>DATA_SOURCE</vocabIdentifier>
+  <vocabIdentifier>DATA_SOURCES</vocabIdentifier>
   <term>
     <termIdentifier>SAMPLE_BASED</termIdentifier>
     <caption>
