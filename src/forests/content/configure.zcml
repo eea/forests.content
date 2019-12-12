@@ -13,20 +13,29 @@
   <include package=".browser" />
 
   <plone:behavior
-    name="forests.metadata"
-    title="Forests standard metadata"
-    description="Adds Forests specific metadata fields."
-    provides=".interfaces.IMetadata"
-    factory=".behavior.Metadata"
+    name="forests.basicmetadata"
+    title="FISE generic required metadata"
+    description="Generic metadata fields."
+    provides=".interfaces.IBasicMetadata"
+    factory=".behavior.BasicMetadata"
     for="plone.dexterity.interfaces.IDexterityContent"
     />
 
   <plone:behavior
-    name="forests.optionalmetadata"
-    title="Forests optional metadata"
-    description="Adds Forests specific optional metadata fields."
-    provides=".interfaces.IOptionalMetadata"
-    factory=".behavior.OptionalMetadata"
+    name="forests.contentmetadata"
+    title="FISE specific content metadata"
+    description="Content specific metadata fields."
+    provides=".interfaces.IContentMetadata"
+    factory=".behavior.ContentMetadata"
+    for="plone.dexterity.interfaces.IDexterityContent"
+    />
+
+  <plone:behavior
+    name="forests.geometadata"
+    title="FISE geospatial metadata"
+    description="Geospatial (INSPIRE-like) metadata fields."
+    provides=".interfaces.IGeospatialMetadata"
+    factory=".behavior.GeospatialMetadata"
     for="plone.dexterity.interfaces.IDexterityContent"
     />
 

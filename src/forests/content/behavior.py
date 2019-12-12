@@ -1,32 +1,47 @@
 import logging
 
-from forests.content.interfaces import IMetadata, IOptionalMetadata
+from forests.content.interfaces import (IBasicMetadata, IContentMetadata,
+                                        IGeospatialMetadata)
 from plone.app.dexterity.behaviors.metadata import (DCFieldProperty,
                                                     MetadataBase)
 
 logger = logging.getLogger(__name__)
 
 
-class Metadata(MetadataBase):
-    """ Standard Fise Metadata adaptor
-    """
-    resource_type = DCFieldProperty(IMetadata['resource_type'])
-    data_source = DCFieldProperty(IMetadata['data_source'])
-    dataset = DCFieldProperty(IMetadata['dataset'])
-    publisher = DCFieldProperty(IMetadata['publisher'])
-    external_url = DCFieldProperty(IMetadata['external_url'])
-    geo_coverage = DCFieldProperty(IMetadata['geo_coverage'])
-    publishing_year = DCFieldProperty(IMetadata['publishing_year'])
-    collection_year_start = DCFieldProperty(IMetadata['collection_year_start'])
-    collection_year_end = DCFieldProperty(IMetadata['collection_year_end'])
-    topics = DCFieldProperty(IMetadata['topics'])
-    keywords = DCFieldProperty(IMetadata['keywords'])
-    info_level = DCFieldProperty(IMetadata['info_level'])
-    accessibility_level = DCFieldProperty(IMetadata['accessibility_level'])
-
-
-class OptionalMetadata(MetadataBase):
+class BasicMetadata(MetadataBase):
     """ Optional Fise metadata adaptor
     """
 
-    nuts_level = DCFieldProperty(IOptionalMetadata['nuts_level'])
+    topics = DCFieldProperty(IContentMetadata['topics'])
+    keywords = DCFieldProperty(IContentMetadata['keywords'])
+
+
+class ContentMetadata(MetadataBase):
+    """ Standard Fise Metadata adaptor
+    """
+
+    resource_type = DCFieldProperty(IContentMetadata['resource_type'])
+    data_source = DCFieldProperty(IContentMetadata['data_source'])
+    dataset = DCFieldProperty(IContentMetadata['dataset'])
+    publisher = DCFieldProperty(IContentMetadata['publisher'])
+    external_url = DCFieldProperty(IContentMetadata['external_url'])
+    geo_coverage = DCFieldProperty(IContentMetadata['geo_coverage'])
+    publishing_year = DCFieldProperty(IContentMetadata['publishing_year'])
+    collection_year_start = DCFieldProperty(
+        IContentMetadata['collection_year_start'])
+    collection_year_end = DCFieldProperty(
+        IContentMetadata['collection_year_end'])
+    info_level = DCFieldProperty(IContentMetadata['info_level'])
+    accessibility_level = DCFieldProperty(
+        IContentMetadata['accessibility_level'])
+    nuts_level = DCFieldProperty(IContentMetadata['nuts_level'])
+
+
+class GeospatialMetadata(MetadataBase):
+    """ Fise Geospatial metadata adaptor
+    """
+
+    spatial_resolution = DCFieldProperty(
+        IGeospatialMetadata['spatial_resolution'])
+    coordinate_system = DCFieldProperty(
+        IGeospatialMetadata['coordinate_system'])
