@@ -27,14 +27,16 @@ class ContentMetadata(MetadataBase):
     external_url = DCFieldProperty(IContentMetadata['external_url'])
     geo_coverage = DCFieldProperty(IContentMetadata['geo_coverage'])
     publishing_year = DCFieldProperty(IContentMetadata['publishing_year'])
-    collection_year_start = DCFieldProperty(
-        IContentMetadata['collection_year_start'])
-    collection_year_end = DCFieldProperty(
-        IContentMetadata['collection_year_end'])
+    collection_years = DCFieldProperty(IContentMetadata['collection_years'])
     info_level = DCFieldProperty(IContentMetadata['info_level'])
     accessibility_level = DCFieldProperty(
         IContentMetadata['accessibility_level'])
     nuts_level = DCFieldProperty(IContentMetadata['nuts_level'])
+
+    # collection_year_start = DCFieldProperty(
+    #     IContentMetadata['collection_year_start'])
+    # collection_year_end = DCFieldProperty(
+    #     IContentMetadata['collection_year_end'])
 
 
 class GeospatialMetadata(MetadataBase):
