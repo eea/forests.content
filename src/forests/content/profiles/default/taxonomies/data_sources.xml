@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<vdex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.imsglobal.org/xsd/imsvdex_v1p0" language="en" orderSignificant="false" profileType="hierarchicalTokenTerms" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsvdex_v1p0 imsvdex_v1p0.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd">
+  <vocabName>
+    <langstring language="en">Data source</langstring>
+  </vocabName>
+  <vocabIdentifier>DATA_SOURCE</vocabIdentifier>
+  <term>
+    <termIdentifier>SAMPLE_BASED</termIdentifier>
+    <caption>
+      <langstring language="en">Sample based</langstring>
+    </caption>
+    <term>
+      <termIdentifier>NFI</termIdentifier>
+      <caption>
+        <langstring language="en">NFI</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>STATE_OF_EUROPE_FORESTS</termIdentifier>
+      <caption>
+        <langstring language="en">State of Europe's Forests</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>FOREST_RESOURCE_ASSESSMENT</termIdentifier>
+      <caption>
+        <langstring language="en">Forest Resource Assessment</langstring>
+      </caption>
+    </term>
+  </term>
+  <term>
+    <termIdentifier>RASTER_BASED</termIdentifier>
+    <caption>
+      <langstring language="en">Raster based</langstring>
+    </caption>
+    <term>
+      <termIdentifier>FOREST_MAP_HRL_FOREST</termIdentifier>
+      <caption>
+        <langstring language="en">Forest Map / HRL Forest</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>CORINE_LAND_COVER</termIdentifier>
+      <caption>
+        <langstring language="en">Corine Land Cover</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>GLOBAL_FOREST_WATCH</termIdentifier>
+      <caption>
+        <langstring language="en">Global Forest Watch</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>MALTESE_PLANNING_AUTHORITY</termIdentifier>
+      <caption>
+        <langstring language="en">Maltese Planning Authority</langstring>
+      </caption>
+    </term>
+  </term>
+</vdex>

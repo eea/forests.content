@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 """Module where all interfaces, events and exceptions live."""
 
+import json
+
 from zope import schema
 from zope.interface import Attribute, Interface, provider
 from zope.publisher.interfaces.browser import IDefaultBrowserLayer
@@ -8,13 +10,28 @@ from zope.publisher.interfaces.browser import IDefaultBrowserLayer
 from plone.app.z3cform.widget import AjaxSelectFieldWidget
 from plone.autoform import directives as form
 from plone.autoform.interfaces import IFormFieldProvider
-from plone.supermodel import directives, model
+from plone.schema import JSONField
+from plone.supermodel import model  # directives,
 
 # from z3c.formwidget.optgroup.widget import OptgroupFieldWidget
 
 
 class IForestsContentLayer(IDefaultBrowserLayer):
     """Marker interface that defines a browser layer."""
+
+
+COLLECTION_YEARS_SCHEMA = json.dumps(
+    {
+        "type": "object",
+        "properties": {
+            "start_year": {
+                "type": "string"
+            },
+            "end_year": {
+                "type": "string"
+            }
+        }
+    })
 
 
 @provider(IFormFieldProvider)
@@ -96,6 +113,14 @@ class IMetadata(model.Schema):
                                             required=False,)
     collection_year_end = schema.TextLine(title=u"Collection end year",
                                           required=False,)
+
+    collection_years = JSONField(
+        title=u"Collection years",
+        description=u"Start year - end year",  # noqa
+        schema=COLLECTION_YEARS_SCHEMA,
+        default={},
+        required=False,
+    )
 
     topics = schema.Tuple(
         title=u"Topics",
