@@ -9,11 +9,19 @@ from zope.publisher.interfaces.browser import IDefaultBrowserLayer
 
 from plone.app.z3cform.widget import AjaxSelectFieldWidget
 from plone.autoform import directives as form
-from plone.autoform.interfaces import IFormFieldProvider
+from plone.autoform.directives import omitted
+# from z3c.formwidget.optgroup.widget import OptgroupFieldWidget
+from plone.autoform.interfaces import OMITTED_KEY, IFormFieldProvider
+from plone.restapi import behaviors
 from plone.schema import JSONField
 from plone.supermodel import model  # directives,
 
-# from z3c.formwidget.optgroup.widget import OptgroupFieldWidget
+behaviors.IBlocks.setTaggedValue(OMITTED_KEY,
+                                 [
+                                     (Interface, 'blocks', 'true'),
+                                     (Interface, 'blocks_layout', 'true'),
+                                 ]
+                                 )
 
 
 class IForestsContentLayer(IDefaultBrowserLayer):
@@ -46,6 +54,7 @@ class IBasicMetadata(model.Schema):
         missing_value=(),
         default=(),
     )
+    omitted('topics')
     form.widget(
         'topics',
         AjaxSelectFieldWidget,
