@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object name="Document" meta_type="Dexterity FTI" i18n:domain="plone"
+<object name="Page" meta_type="Dexterity FTI" i18n:domain="plone"
    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
- <property name="title" i18n:translate="">Legacy document</property>
+ <property name="title" i18n:translate="">Webpage</property>
  <property name="icon_expr"></property>
- <property name="factory">Document</property>
+ <property name="factory">Page</property>
  <property
-    name="add_view_expr">string:${folder_url}/++add++Document</property>
+    name="add_view_expr">string:${folder_url}/++add++Page</property>
  <property name="link_target"></property>
  <property name="immediate_view">view</property>
- <property name="global_allow">False</property>
+ <property name="global_allow">True</property>
  <property name="filter_content_types">False</property>
  <property name="allowed_content_types"/>
  <property name="allow_discussion">False</property>
@@ -38,7 +38,6 @@
   <element value="plone.leadimage"/>
   <element value="forests.visualization"/>
   <element value="plone.richtext"/>
-  <element value="plone.restapi.behaviors.IBlocks"/>
   <element value="forests.basicmetadata"/>
   <element value="forests.geometadata"/>
   <element value="forests.contentmetadata"/>
