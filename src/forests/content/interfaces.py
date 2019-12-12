@@ -94,7 +94,7 @@ class IContentMetadata(model.Schema):
 
     nuts_level = schema.Tuple(
         title=u"NUTS Levels",
-        description=u"Nomenclature of territorial units for statistics level"
+        description=u"Nomenclature of territorial units for statistics level",
         value_type=schema.Choice(vocabulary="collective.taxonomy.nuts_levels"),
         required=False,
         missing_value=(),
