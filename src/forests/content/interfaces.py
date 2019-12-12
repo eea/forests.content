@@ -9,7 +9,8 @@ from plone.app.z3cform.widget import AjaxSelectFieldWidget
 from plone.autoform import directives as form
 from plone.autoform.interfaces import IFormFieldProvider
 from plone.supermodel import directives, model
-from z3c.formwidget.optgroup.widget import OptgroupFieldWidget
+
+# from z3c.formwidget.optgroup.widget import OptgroupFieldWidget
 
 
 class IForestsContentLayer(IDefaultBrowserLayer):
@@ -21,21 +22,21 @@ class IMetadata(model.Schema):
     """ Generic metadata for forests data types
     """
 
-    directives.fieldset('fise-metadata', label="Forests Metadata", fields=[
-        'resource_type',
-        'data_source',
-        'dataset',
-        'publisher',
-        'external_url',
-        'geo_coverage',
-        'publishing_year',
-        'collection_year_start',
-        'collection_year_end',
-        'topics',
-        'keywords',
-        'info_level',
-        'accessibility_level',
-    ])
+    # directives.fieldset('fise-metadata', label="Forests Metadata", fields=[
+    #     'resource_type',
+    #     'data_source',
+    #     'dataset',
+    #     'publisher',
+    #     'external_url',
+    #     'geo_coverage',
+    #     'publishing_year',
+    #     'collection_year_start',
+    #     'collection_year_end',
+    #     'topics',
+    #     'keywords',
+    #     'info_level',
+    #     'accessibility_level',
+    # ])
 
     resource_type = schema.Choice(
         title=u'Resource type',
@@ -45,18 +46,20 @@ class IMetadata(model.Schema):
 
     data_source = schema.Choice(
         title=u"Data Source",
-        vocabulary="fise.data_sources",
+        vocabulary="collective.taxonomy.data_sources",
         required=False,
 
     )
-    form.widget(
-        'data_source',
-        OptgroupFieldWidget,
-        vocabulary='fise.data_sources'
-    )
+    # form.widget(
+    #     'data_source',
+    #     OptgroupFieldWidget,
+    #     vocabulary='collective.taxonomy.data_sources'
+    # )
 
-    dataset = schema.Choice(title=u"Dataset", vocabulary="fise.datasets",
-                            required=False)
+    dataset = schema.Choice(
+        title=u"Dataset",
+        vocabulary="fise.datasets",
+        required=False)
 
     # publisher = schema.TextLine(
     #     title=u"Publisher",
@@ -72,14 +75,15 @@ class IMetadata(model.Schema):
     form.widget(        # text with autocomplete
         'publisher',
         AjaxSelectFieldWidget,
-        vocabulary='fise.publishers'
+        vocabulary='collective.taxonomy.publishers'
     )
 
     external_url = schema.TextLine(title=u"Link to resource", required=False)
 
     geo_coverage = schema.Tuple(
         title=u"Geographical coverage",
-        value_type=schema.Choice(vocabulary="fise.geocoverage"),
+        value_type=schema.Choice(
+            vocabulary="collective.taxonomy.geographical_coverage"),
         required=False,
         missing_value=(),
         default=(),
@@ -103,7 +107,7 @@ class IMetadata(model.Schema):
     form.widget(
         'topics',
         AjaxSelectFieldWidget,
-        vocabulary='fise.topics'
+        vocabulary='collective.taxonomy.topics'
     )
 
     keywords = schema.Tuple(
@@ -116,16 +120,17 @@ class IMetadata(model.Schema):
     form.widget(
         'keywords',
         AjaxSelectFieldWidget,
-        vocabulary='fise.keywords'
+        vocabulary='collective.taxonomy.keywords'
     )
 
     info_level = schema.Choice(title=u"Info level",
-                               vocabulary='fise.info_levels',
+                               vocabulary='collective.taxonomy.info_levels',
                                required=False,)
 
-    accessibility_level = schema.Choice(title=u'Accesibility levels',
-                                        vocabulary='fise.accessibility_levels',
-                                        required=False,)
+    accessibility_level = schema.Choice(
+        title=u'Accesibility levels',
+        vocabulary='collective.taxonomy.accessibility_levels',
+        required=False,)
 
 
 @provider(IFormFieldProvider)
@@ -135,14 +140,14 @@ class IOptionalMetadata(model.Schema):
 
     nuts_level = schema.Tuple(
         title=u"NUTS Levels",
-        value_type=schema.Choice(vocabulary="fise.nuts_levels"),
+        value_type=schema.Choice(vocabulary="collective.taxonomy.nuts_levels"),
         required=False,
         missing_value=(),
         default=(),
     )
-    directives.fieldset('fise-metadata', label="Forests Metadata", fields=[
-        'nuts_level',
-    ])
+    # directives.fieldset('fise-metadata', label="Forests Metadata", fields=[
+    #     'nuts_level',
+    # ])
 
 
 class IComputedMetadata(Interface):
