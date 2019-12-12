@@ -12,8 +12,8 @@ class BasicMetadata(MetadataBase):
     """ Optional Fise metadata adaptor
     """
 
-    topics = DCFieldProperty(IContentMetadata['topics'])
-    keywords = DCFieldProperty(IContentMetadata['keywords'])
+    topics = DCFieldProperty(IBasicMetadata['topics'])
+    keywords = DCFieldProperty(IBasicMetadata['keywords'])
 
 
 class ContentMetadata(MetadataBase):
