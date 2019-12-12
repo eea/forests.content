@@ -54,7 +54,6 @@ class IBasicMetadata(model.Schema):
         missing_value=(),
         default=(),
     )
-    omitted('topics')
     form.widget(
         'topics',
         AjaxSelectFieldWidget,
