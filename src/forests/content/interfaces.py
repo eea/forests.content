@@ -9,7 +9,7 @@ from zope.publisher.interfaces.browser import IDefaultBrowserLayer
 
 from plone.app.z3cform.widget import AjaxSelectFieldWidget
 from plone.autoform import directives as form
-from plone.autoform.directives import omitted
+# from plone.autoform.directives import omitted
 # from z3c.formwidget.optgroup.widget import OptgroupFieldWidget
 from plone.autoform.interfaces import OMITTED_KEY, IFormFieldProvider
 from plone.restapi import behaviors
@@ -130,7 +130,7 @@ class IContentMetadata(model.Schema):
 
     publisher = schema.Tuple(
         title=u"Publisher",
-        description=u"Owner/Responsible Organisation"
+        description=u"Owner/Responsible Organisation",
         value_type=schema.TextLine(),
         required=False,
         missing_value=(),
@@ -152,12 +152,12 @@ class IContentMetadata(model.Schema):
 
     accessibility_level = schema.Choice(
         title=u'Accesibility levels',
-        description=u"Level of access from 'public' to restricted'"
+        description=u"Level of access from 'public' to restricted'",
         vocabulary='collective.taxonomy.accessibility_levels',
         required=False,)
     geo_coverage = schema.Tuple(
         title=u"Geographical coverage",
-        description=u"A country from EEA39 + relevant FISE regions"
+        description=u"A country from EEA39 + relevant FISE regions",
         value_type=schema.Choice(
             vocabulary="collective.taxonomy.geographical_coverage"),
         required=False,
