@@ -41,6 +41,7 @@ class IBasicMetadata(model.Schema):
 
     topics = schema.Tuple(
         title=u"Topics",
+        description=u"Topic selected from a predefined list",
         value_type=schema.TextLine(),
         required=False,
         missing_value=(),
@@ -54,6 +55,7 @@ class IBasicMetadata(model.Schema):
 
     keywords = schema.Tuple(
         title=u"Keywords",
+        description=u"One or more selectable keywords",
         value_type=schema.TextLine(),
         required=False,
         missing_value=(),
@@ -76,12 +78,15 @@ class IContentMetadata(model.Schema):
 
     resource_type = schema.Choice(
         title=u'Resource type',
+        description=u"Type of result; for NFI the values are taken from the"
+                    "'Result format' field",
         vocabulary="collective.taxonomy.resource_type",
         required=False,
     )
 
     nuts_level = schema.Tuple(
         title=u"NUTS Levels",
+        description=u"Nomenclature of territorial units for statistics level"
         value_type=schema.Choice(vocabulary="collective.taxonomy.nuts_levels"),
         required=False,
         missing_value=(),
@@ -90,11 +95,14 @@ class IContentMetadata(model.Schema):
 
     dataset = schema.Choice(
         title=u"Dataset",
+        description=u"Possible values: NFI, FAO, FRA, GFW, Alpine Convention,"
+                    "SoEF, etc"
         vocabulary="fise.datasets",
         required=False)
 
     data_source = schema.Choice(
         title=u"Data Source",
+        description=u"The sources in the data, not the publisher",
         vocabulary="collective.taxonomy.data_sources",
         required=False,
     )
@@ -114,6 +122,7 @@ class IContentMetadata(model.Schema):
 
     publisher = schema.Tuple(
         title=u"Publisher",
+        description=u"Owner/Responsible Organisation"
         value_type=schema.TextLine(),
         required=False,
         missing_value=(),
@@ -135,10 +144,12 @@ class IContentMetadata(model.Schema):
 
     accessibility_level = schema.Choice(
         title=u'Accesibility levels',
+        description=u"Level of access from 'public' to restricted'"
         vocabulary='collective.taxonomy.accessibility_levels',
         required=False,)
     geo_coverage = schema.Tuple(
         title=u"Geographical coverage",
+        description=u"A country from EEA39 + relevant FISE regions"
         value_type=schema.Choice(
             vocabulary="collective.taxonomy.geographical_coverage"),
         required=False,

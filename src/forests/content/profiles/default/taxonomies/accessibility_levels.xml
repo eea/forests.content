@@ -5,9 +5,21 @@
   </vocabName>
   <vocabIdentifier>ACCESSIBILITY_LEVEL</vocabIdentifier>
   <term>
-    <termIdentifier>TEXT</termIdentifier>
+    <termIdentifier>PUBLICLY_AVAILABLE</termIdentifier>
     <caption>
-      <langstring language="en">text</langstring>
+      <langstring language="en">publicly available</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>DOWNLOAD_WITH_REGISTRATION_OR_REQUEST</termIdentifier>
+    <caption>
+      <langstring language="en">download with registration or request</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>RESTRICTED</termIdentifier>
+    <caption>
+      <langstring language="en">restricted</langstring>
     </caption>
   </term>
 </vdex>
