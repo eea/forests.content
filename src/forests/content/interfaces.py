@@ -87,7 +87,7 @@ class IContentMetadata(model.Schema):
     resource_type = schema.Choice(
         title=u'Resource type',
         description=u"Type of result; for NFI the values are taken from the"
-                    "'Result format' field",
+                    u"'Result format' field",
         vocabulary="collective.taxonomy.resource_type",
         required=False,
     )
@@ -104,8 +104,8 @@ class IContentMetadata(model.Schema):
     dataset = schema.Choice(
         title=u"Dataset",
         description=u"Possible values: NFI, FAO, FRA, GFW, Alpine Convention,"
-                    "SoEF, etc"
-        vocabulary="fise.datasets",
+                    u"SoEF, etc",
+        vocabulary="collective.taxonomy.datasets",
         required=False)
 
     data_source = schema.Choice(
