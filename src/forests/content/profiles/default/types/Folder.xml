@@ -31,7 +31,7 @@
   <element value="plone.constraintypes"/>
   <element value="plone.nextprevioustoggle"/>
   <element value="plone.leadimage"/>
-  <element value="plone.restapi.behaviors.IBlocks"/>
+  <!-- <element value="plone.restapi.behaviors.IBlocks"/> -->
   <element value="restapi.attachments"/>
   <element value="slider-images"/>
   <element value="forests.metadata"/>

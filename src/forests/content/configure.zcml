@@ -39,4 +39,6 @@
     for="plone.dexterity.interfaces.IDexterityContent"
     />
 
+<!-- <adapter factory=".patches.TweakRichTextSchema" name="forests.tweaks.richtext" /> -->
+
 </configure>
