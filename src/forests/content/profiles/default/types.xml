@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object name="portal_types" meta_type="Plone Types Tool">
- <property
-    name="title">Controls the available content types in your portal</property>
- <object name="Discussion Item" meta_type="Factory-based Type Information"/>
- <object name="Plone Site"
-    meta_type="Factory-based Type Information with dynamic views"/>
- <object name="TempFolder" meta_type="Factory-based Type Information"/>
  <object name="Collection" meta_type="Dexterity FTI"/>
  <object name="Document" meta_type="Dexterity FTI"/>
- <object name="Folder" meta_type="Dexterity FTI"/>
- <object name="Link" meta_type="Dexterity FTI"/>
- <object name="File" meta_type="Dexterity FTI"/>
- <object name="Image" meta_type="Dexterity FTI"/>
- <object name="News Item" meta_type="Dexterity FTI"/>
  <object name="Event" meta_type="Dexterity FTI"/>
+ <object name="File" meta_type="Dexterity FTI"/>
+ <object name="Folder" meta_type="Dexterity FTI"/>
+ <object name="Image" meta_type="Dexterity FTI"/>
+ <object name="Link" meta_type="Dexterity FTI"/>
+ <object name="News Item" meta_type="Dexterity FTI"/>
+ <object name="Page" meta_type="Dexterity FTI"/>
  <object name="discodataconnector" meta_type="Dexterity FTI"/>
  <object name="visualization" meta_type="Dexterity FTI"/>
- <object name="CompositePage" meta_type="Dexterity FTI"/>
 </object>

@@ -27,21 +27,17 @@
  <property
     name="klass">collective.folderishtypes.dx.content.FolderishDocument</property>
  <property name="behaviors">
-  <element value="plone.namefromtitle"/>
-  <element value="plone.excludefromnavigation"/>
   <element value="plone.shortname"/>
-  <element
-     value="Products.CMFPlone.interfaces.constrains.ISelectableConstrainTypes"/>
-  <element value="forests.optionalmetadata"/>
-  <element value="forests.metadata"/>
-  <element value="plone.leadimage"/>
-  <element value="forests.visualization"/>
-  <element value="plone.richtext"/>
-  <element value="plone.restapi.behaviors.IBlocks"/>
-  <element value="plone.basic"/>
   <element value="forests.basicmetadata"/>
-  <element value="forests.geometadata"/>
   <element value="forests.contentmetadata"/>
+  <element value="forests.geometadata"/>
+  <element value="plone.basic"/>
+  <element value="plone.excludefromnavigation"/>
+  <element value="plone.leadimage"/>
+  <element value="plone.namefromtitle"/>
+  <element value="plone.restapi.behaviors.IBlocks"/>
+  <element value="plone.richtext"/>
+  <element value="Products.CMFPlone.interfaces.constrains.ISelectableConstrainTypes"/>
  </property>
  <property name="schema"></property>
  <property name="model_source"></property>
