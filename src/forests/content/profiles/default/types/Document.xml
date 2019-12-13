@@ -10,7 +10,7 @@
     name="add_view_expr">string:${folder_url}/++add++Document</property>
  <property name="link_target"></property>
  <property name="immediate_view">view</property>
- <property name="global_allow">False</property>
+ <property name="global_allow">True</property>
  <property name="filter_content_types">False</property>
  <property name="allowed_content_types"/>
  <property name="allow_discussion">False</property>
@@ -39,7 +39,7 @@
   <element value="plone.namefromtitle"/>
   <element value="plone.restapi.behaviors.IBlocks"/>
   <element value="plone.shortname"/>
-  <element value="plone.versioning"/>
+  <!-- <element value="plone.versioning"/> -->
  </property>
  <property name="schema"></property>
  <property name="model_source"></property>
