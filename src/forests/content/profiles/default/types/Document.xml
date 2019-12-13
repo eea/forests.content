@@ -32,14 +32,14 @@
   <element value="forests.basicmetadata"/>
   <element value="forests.geometadata"/>
   <element value="plone.leadimage"/>
-  <element value="Products.CMFPlone.interfaces.constrains.ISelectableConstrainTypes"/>
+  <element
+     value="Products.CMFPlone.interfaces.constrains.ISelectableConstrainTypes"/>
   <element value="plone.allowdiscussion"/>
   <element value="plone.excludefromnavigation"/>
   <element value="plone.locking"/>
   <element value="plone.namefromtitle"/>
   <element value="plone.restapi.behaviors.IBlocks"/>
   <element value="plone.shortname"/>
-  <!-- <element value="plone.versioning"/> -->
  </property>
  <property name="schema"></property>
  <property name="model_source"></property>

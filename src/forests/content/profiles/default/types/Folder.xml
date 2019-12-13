@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object name="Folder" meta_type="Dexterity FTI" i18n:domain="plone"
    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
- <property name="title" i18n:translate="">Folder</property>
+ <property name="title" i18n:translate="">Folder (Composite Legacy)</property>
  <property name="description" i18n:translate=""></property>
  <property name="icon_expr"></property>
  <property name="factory">Folder</property>
  <property name="add_view_expr">string:${folder_url}/++add++Folder</property>
  <property name="link_target"></property>
  <property name="immediate_view">view</property>
- <property name="global_allow">True</property>
+ <property name="global_allow">False</property>
  <property name="filter_content_types">False</property>
  <property name="allowed_content_types"/>
  <property name="allow_discussion">False</property>
@@ -31,13 +31,13 @@
   <element value="plone.constraintypes"/>
   <element value="plone.nextprevioustoggle"/>
   <element value="plone.leadimage"/>
-  <!-- <element value="plone.restapi.behaviors.IBlocks"/> -->
   <element value="restapi.attachments"/>
   <element value="slider-images"/>
   <element value="forests.metadata"/>
   <element value="plone.richtext"/>
   <element value="plone.basic"/>
   <element value="forests.basicmetadata"/>
+  <element value="volto.blocks"/>
  </property>
  <property name="schema"></property>
  <property name="model_source"></property>
