@@ -22,8 +22,6 @@ class SchemaTweaks(object):
             field = self.schema['text']
             field.description = u'Rich text, double click for toolbar.'
 
-            return
-
         if self.schema.getName() == 'IBlocks':
             del self.schema._Element__tagged_values[
                 'plone.supermodel.fieldsets'
