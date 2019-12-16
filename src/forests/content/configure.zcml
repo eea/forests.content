@@ -41,4 +41,9 @@
 
   <adapter factory=".patches.SchemaTweaks" name="forests.schema.tweaks" />
 
+  <adapter
+      for="plone.dexterity.interfaces.IDexterityContent"
+      factory="plone.app.dexterity.behaviors.exclfromnav.default_exclude_true"
+      />
+
 </configure>
