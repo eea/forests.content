@@ -11,4 +11,5 @@
  <object name="Page" meta_type="Dexterity FTI"/>
  <object name="discodataconnector" meta_type="Dexterity FTI"/>
  <object name="visualization" meta_type="Dexterity FTI"/>
+ <object name="embeddedmap" meta_type="Dexterity FTI"/>
 </object>
