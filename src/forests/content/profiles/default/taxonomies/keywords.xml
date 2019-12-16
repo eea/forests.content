@@ -3,11 +3,3173 @@
   <vocabName>
     <langstring language="en">Keywords</langstring>
   </vocabName>
-  <vocabIdentifier>KEYWORDS</vocabIdentifier>
+  <vocabIdentifier>keywords</vocabIdentifier>
   <term>
-    <termIdentifier>TEXT</termIdentifier>
+    <termIdentifier>abiotic</termIdentifier>
     <caption>
-      <langstring language="en">Text</langstring>
+      <langstring language="EN">abiotic</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>above-ground-biomass</termIdentifier>
+    <caption>
+      <langstring language="EN">above-ground-biomass</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>access</termIdentifier>
+    <caption>
+      <langstring language="EN">access</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>acidification</termIdentifier>
+    <caption>
+      <langstring language="EN">acidification</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>acidity</termIdentifier>
+    <caption>
+      <langstring language="EN">acidity</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>administrative-units</termIdentifier>
+    <caption>
+      <langstring language="EN">administrative-units</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>afforestation</termIdentifier>
+    <caption>
+      <langstring language="EN">afforestation</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>age-class</termIdentifier>
+    <caption>
+      <langstring language="EN">age-class</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>agent</termIdentifier>
+    <caption>
+      <langstring language="EN">agent</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>agricultural-trees</termIdentifier>
+    <caption>
+      <langstring language="EN">agricultural-trees</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>agroforestry</termIdentifier>
+    <caption>
+      <langstring language="EN">agroforestry</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>air-pollution</termIdentifier>
+    <caption>
+      <langstring language="EN">air-pollution</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>altitude</termIdentifier>
+    <caption>
+      <langstring language="EN">altitude</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>ancient-woodland</termIdentifier>
+    <caption>
+      <langstring language="EN">ancient-woodland</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>animal_damage</termIdentifier>
+    <caption>
+      <langstring language="EN">animal damage</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>annex-1</termIdentifier>
+    <caption>
+      <langstring language="EN">Annex-1</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>article17</termIdentifier>
+    <caption>
+      <langstring language="EN">Article17</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>anthropogenic</termIdentifier>
+    <caption>
+      <langstring language="EN">anthropogenic</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>area</termIdentifier>
+    <caption>
+      <langstring language="EN">area</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>background</termIdentifier>
+    <caption>
+      <langstring language="EN">background</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>bark-excluded</termIdentifier>
+    <caption>
+      <langstring language="EN">bark-excluded</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>bark-included</termIdentifier>
+    <caption>
+      <langstring language="EN">bark-included</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>bark-volume</termIdentifier>
+    <caption>
+      <langstring language="EN">bark-volume</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>basal-area</termIdentifier>
+    <caption>
+      <langstring language="EN">basal-area</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>below-ground-biomass</termIdentifier>
+    <caption>
+      <langstring language="EN">below-ground-biomass</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>beneficial_organism</termIdentifier>
+    <caption>
+      <langstring language="EN">beneficial organism</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>biodiversity</termIdentifier>
+    <caption>
+      <langstring language="EN">biodiversity</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>bioeconomy</termIdentifier>
+    <caption>
+      <langstring language="EN">bioeconomy</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>bioenergy</termIdentifier>
+    <caption>
+      <langstring language="EN">bioenergy</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>biomass</termIdentifier>
+    <caption>
+      <langstring language="EN">biomass</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>biotic</termIdentifier>
+    <caption>
+      <langstring language="EN">biotic</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>bird-conservation</termIdentifier>
+    <caption>
+      <langstring language="EN">bird-conservation</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>birds</termIdentifier>
+    <caption>
+      <langstring language="EN">birds</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>boreal_forest_dieback</termIdentifier>
+    <caption>
+      <langstring language="EN">boreal forest dieback</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>branches</termIdentifier>
+    <caption>
+      <langstring language="EN">branches</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>broad-leaved_tree</termIdentifier>
+    <caption>
+      <langstring language="EN">broad-leaved tree</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>broadleaved-forest</termIdentifier>
+    <caption>
+      <langstring language="EN">broadleaved-forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>brushwood</termIdentifier>
+    <caption>
+      <langstring language="EN">brushwood</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>bush_clearing</termIdentifier>
+    <caption>
+      <langstring language="EN">bush clearing</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>canopy-closure</termIdentifier>
+    <caption>
+      <langstring language="EN">canopy-closure</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>canopy-cover</termIdentifier>
+    <caption>
+      <langstring language="EN">canopy-cover</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>carbon-sequestration</termIdentifier>
+    <caption>
+      <langstring language="EN">carbon-sequestration</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>carbon-sink</termIdentifier>
+    <caption>
+      <langstring language="EN">carbon-sink</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>carbon-stock</termIdentifier>
+    <caption>
+      <langstring language="EN">carbon-stock</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>change</termIdentifier>
+    <caption>
+      <langstring language="EN">change</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>circular_economy</termIdentifier>
+    <caption>
+      <langstring language="EN">circular economy</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>clear-cut</termIdentifier>
+    <caption>
+      <langstring language="EN">clear-cut</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>climate_change</termIdentifier>
+    <caption>
+      <langstring language="EN">climate change</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>closed-forest</termIdentifier>
+    <caption>
+      <langstring language="EN">closed-forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>co2-equivalent</termIdentifier>
+    <caption>
+      <langstring language="EN">CO2-equivalent</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>comparison</termIdentifier>
+    <caption>
+      <langstring language="EN">comparison</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>concentration</termIdentifier>
+    <caption>
+      <langstring language="EN">concentration</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>conifer</termIdentifier>
+    <caption>
+      <langstring language="EN">conifer</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>coniferous_forest</termIdentifier>
+    <caption>
+      <langstring language="EN">coniferous forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>coniferous_tree</termIdentifier>
+    <caption>
+      <langstring language="EN">coniferous tree</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>controlled_hunting_zone</termIdentifier>
+    <caption>
+      <langstring language="EN">controlled hunting zone</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>coordinates</termIdentifier>
+    <caption>
+      <langstring language="EN">coordinates</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>copernicus</termIdentifier>
+    <caption>
+      <langstring language="EN">COPERNICUS</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>coppice</termIdentifier>
+    <caption>
+      <langstring language="EN">coppice</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>coppice_with_standards</termIdentifier>
+    <caption>
+      <langstring language="EN">coppice with standards</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>corine-land-cover-clc</termIdentifier>
+    <caption>
+      <langstring language="EN">CORINE-LAND-COVER-CLC</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>crown-cover</termIdentifier>
+    <caption>
+      <langstring language="EN">crown-cover</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>cutting_(forestry)</termIdentifier>
+    <caption>
+      <langstring language="EN">cutting (forestry)</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>cutting_(vegetative_propagation)</termIdentifier>
+    <caption>
+      <langstring language="EN">cutting (vegetative propagation)</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>damage</termIdentifier>
+    <caption>
+      <langstring language="EN">damage</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>damage-intensity</termIdentifier>
+    <caption>
+      <langstring language="EN">damage-intensity</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>db-description</termIdentifier>
+    <caption>
+      <langstring language="EN">DB-description</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>deadwood</termIdentifier>
+    <caption>
+      <langstring language="EN">deadwood</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>deadwood-volume</termIdentifier>
+    <caption>
+      <langstring language="EN">deadwood-volume</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>decay-degree</termIdentifier>
+    <caption>
+      <langstring language="EN">decay-degree</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>deciduous_forest</termIdentifier>
+    <caption>
+      <langstring language="EN">deciduous forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>deciduous_tree</termIdentifier>
+    <caption>
+      <langstring language="EN">deciduous tree</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>deer</termIdentifier>
+    <caption>
+      <langstring language="EN">deer</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>definition</termIdentifier>
+    <caption>
+      <langstring language="EN">definition</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>defoliation</termIdentifier>
+    <caption>
+      <langstring language="EN">defoliation</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>deforestation</termIdentifier>
+    <caption>
+      <langstring language="EN">deforestation</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>degraded-forest</termIdentifier>
+    <caption>
+      <langstring language="EN">degraded-forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>degraded-land</termIdentifier>
+    <caption>
+      <langstring language="EN">degraded-land</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>density</termIdentifier>
+    <caption>
+      <langstring language="EN">density</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>density-classes</termIdentifier>
+    <caption>
+      <langstring language="EN">density-classes</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>deposition</termIdentifier>
+    <caption>
+      <langstring language="EN">deposition</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>desertification</termIdentifier>
+    <caption>
+      <langstring language="EN">desertification</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>dimension-classes</termIdentifier>
+    <caption>
+      <langstring language="EN">dimension-classes</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>disease</termIdentifier>
+    <caption>
+      <langstring language="EN">disease</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>diversity-index</termIdentifier>
+    <caption>
+      <langstring language="EN">diversity-index</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>drain</termIdentifier>
+    <caption>
+      <langstring language="EN">drain</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>ecological-region</termIdentifier>
+    <caption>
+      <langstring language="EN">ecological-region</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>ecosystem-services</termIdentifier>
+    <caption>
+      <langstring language="EN">ecosystem-services</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>eea</termIdentifier>
+    <caption>
+      <langstring language="EN">EEA</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>eft</termIdentifier>
+    <caption>
+      <langstring language="EN">EFT</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>elevation</termIdentifier>
+    <caption>
+      <langstring language="EN">elevation</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>employees</termIdentifier>
+    <caption>
+      <langstring language="EN">employees</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>energy-wood</termIdentifier>
+    <caption>
+      <langstring language="EN">energy-wood</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>environment</termIdentifier>
+    <caption>
+      <langstring language="EN">environment</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>environmental_impact_of_forestry</termIdentifier>
+    <caption>
+      <langstring language="EN">environmental impact of forestry</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>environmental-condition</termIdentifier>
+    <caption>
+      <langstring language="EN">environmental-condition</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>errata</termIdentifier>
+    <caption>
+      <langstring language="EN">errata</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>eucalyptus-species</termIdentifier>
+    <caption>
+      <langstring language="EN">eucalyptus-species</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>eutrofication</termIdentifier>
+    <caption>
+      <langstring language="EN">eutrofication</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>extinction</termIdentifier>
+    <caption>
+      <langstring language="EN">extinction</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>extraction-distance</termIdentifier>
+    <caption>
+      <langstring language="EN">extraction-distance</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>fao-forest-definition</termIdentifier>
+    <caption>
+      <langstring language="EN">FAO-forest-definition</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>fao-fra</termIdentifier>
+    <caption>
+      <langstring language="EN">FAO-FRA</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>faws</termIdentifier>
+    <caption>
+      <langstring language="EN">FAWS</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>felling</termIdentifier>
+    <caption>
+      <langstring language="EN">felling</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>fire</termIdentifier>
+    <caption>
+      <langstring language="EN">fire</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>fnaws</termIdentifier>
+    <caption>
+      <langstring language="EN">FNAWS</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forecast</termIdentifier>
+    <caption>
+      <langstring language="EN">forecast</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest</termIdentifier>
+    <caption>
+      <langstring language="EN">forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest_biological_reserve</termIdentifier>
+    <caption>
+      <langstring language="EN">forest biological reserve</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest_companies</termIdentifier>
+    <caption>
+      <langstring language="EN">forest companies</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest_condition</termIdentifier>
+    <caption>
+      <langstring language="EN">forest condition</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest_conservation</termIdentifier>
+    <caption>
+      <langstring language="EN">forest conservation</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest_cover_destruction</termIdentifier>
+    <caption>
+      <langstring language="EN">forest cover destruction</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest_damage</termIdentifier>
+    <caption>
+      <langstring language="EN">forest damage</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest_deterioration</termIdentifier>
+    <caption>
+      <langstring language="EN">forest deterioration</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest_ecology</termIdentifier>
+    <caption>
+      <langstring language="EN">forest ecology</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest_ecosystem</termIdentifier>
+    <caption>
+      <langstring language="EN">forest ecosystem</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest_exploitation</termIdentifier>
+    <caption>
+      <langstring language="EN">forest exploitation</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest_fire</termIdentifier>
+    <caption>
+      <langstring language="EN">forest fire</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest_industry</termIdentifier>
+    <caption>
+      <langstring language="EN">forest industry</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest_industry</termIdentifier>
+    <caption>
+      <langstring language="EN">forest industry</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest_management</termIdentifier>
+    <caption>
+      <langstring language="EN">forest management</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest_pest</termIdentifier>
+    <caption>
+      <langstring language="EN">forest pest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest_policy</termIdentifier>
+    <caption>
+      <langstring language="EN">forest policy</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest_product</termIdentifier>
+    <caption>
+      <langstring language="EN">forest product</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest_production</termIdentifier>
+    <caption>
+      <langstring language="EN">forest production</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest_protection</termIdentifier>
+    <caption>
+      <langstring language="EN">forest protection</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest_reserve</termIdentifier>
+    <caption>
+      <langstring language="EN">forest reserve</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest_resource</termIdentifier>
+    <caption>
+      <langstring language="EN">forest resource</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest_resource_assessment</termIdentifier>
+    <caption>
+      <langstring language="EN">forest resource assessment</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest-based-sector</termIdentifier>
+    <caption>
+      <langstring language="EN">forest-based-sector</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest-birds</termIdentifier>
+    <caption>
+      <langstring language="EN">forest-birds</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest-development</termIdentifier>
+    <caption>
+      <langstring language="EN">forest-development</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forested_land</termIdentifier>
+    <caption>
+      <langstring language="EN">forested land</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest-education</termIdentifier>
+    <caption>
+      <langstring language="EN">forest-education</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest-industries</termIdentifier>
+    <caption>
+      <langstring language="EN">forest-industries</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest-loss</termIdentifier>
+    <caption>
+      <langstring language="EN">forest-loss</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest-management</termIdentifier>
+    <caption>
+      <langstring language="EN">forest-management</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest-management-plan</termIdentifier>
+    <caption>
+      <langstring language="EN">forest-management-plan</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest-management-regions</termIdentifier>
+    <caption>
+      <langstring language="EN">forest-management-regions</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest-operation</termIdentifier>
+    <caption>
+      <langstring language="EN">forest-operation</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest-patch-analysis</termIdentifier>
+    <caption>
+      <langstring language="EN">forest-patch-analysis</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest-products</termIdentifier>
+    <caption>
+      <langstring language="EN">forest-products</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forestry</termIdentifier>
+    <caption>
+      <langstring language="EN">forestry</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forestry_economics</termIdentifier>
+    <caption>
+      <langstring language="EN">forestry economics</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forestry_law</termIdentifier>
+    <caption>
+      <langstring language="EN">forestry law</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forestry_legislation</termIdentifier>
+    <caption>
+      <langstring language="EN">forestry legislation</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forestry_practice</termIdentifier>
+    <caption>
+      <langstring language="EN">forestry practice</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forestry_unit</termIdentifier>
+    <caption>
+      <langstring language="EN">forestry unit</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest-sector-development</termIdentifier>
+    <caption>
+      <langstring language="EN">forest-sector-development</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest-tax-revenue</termIdentifier>
+    <caption>
+      <langstring language="EN">forest-tax-revenue</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest-type</termIdentifier>
+    <caption>
+      <langstring language="EN">forest-type</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>fuel_wood</termIdentifier>
+    <caption>
+      <langstring language="EN">fuel wood</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>funghi</termIdentifier>
+    <caption>
+      <langstring language="EN">funghi</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>game_(animals)</termIdentifier>
+    <caption>
+      <langstring language="EN">game (animals)</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>gdp</termIdentifier>
+    <caption>
+      <langstring language="EN">GDP</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>gio-land</termIdentifier>
+    <caption>
+      <langstring language="EN">GIO-Land</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>global-forest-watch</termIdentifier>
+    <caption>
+      <langstring language="EN">Global-Forest-Watch</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>glossary</termIdentifier>
+    <caption>
+      <langstring language="EN">glossary</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>gps-coordinates</termIdentifier>
+    <caption>
+      <langstring language="EN">GPS-coordinates</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>green-house-gasses-ghg</termIdentifier>
+    <caption>
+      <langstring language="EN">green-house-gasses-GHG</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>green-jobs</termIdentifier>
+    <caption>
+      <langstring language="EN">green-jobs</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>gross_added_value</termIdentifier>
+    <caption>
+      <langstring language="EN">gross added value</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>gross-annual-increment</termIdentifier>
+    <caption>
+      <langstring language="EN">gross-annual-increment</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>growing-stock</termIdentifier>
+    <caption>
+      <langstring language="EN">growing-stock</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>habitat-types</termIdentifier>
+    <caption>
+      <langstring language="EN">habitat-types</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>harvest</termIdentifier>
+    <caption>
+      <langstring language="EN">harvest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>health</termIdentifier>
+    <caption>
+      <langstring language="EN">health</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>heathland</termIdentifier>
+    <caption>
+      <langstring language="EN">heathland</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>hedgerows</termIdentifier>
+    <caption>
+      <langstring language="EN">hedgerows</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>horizontal-diversity</termIdentifier>
+    <caption>
+      <langstring language="EN">horizontal-diversity</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>hrl</termIdentifier>
+    <caption>
+      <langstring language="EN">HRL</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>hunting</termIdentifier>
+    <caption>
+      <langstring language="EN">hunting</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>hunting_licence</termIdentifier>
+    <caption>
+      <langstring language="EN">hunting licence</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>hunting_reserve</termIdentifier>
+    <caption>
+      <langstring language="EN">hunting reserve</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>hydrology</termIdentifier>
+    <caption>
+      <langstring language="EN">hydrology</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>incident</termIdentifier>
+    <caption>
+      <langstring language="EN">incident</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>increment</termIdentifier>
+    <caption>
+      <langstring language="EN">increment</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>indigenous_forest</termIdentifier>
+    <caption>
+      <langstring language="EN">indigenous forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>insects</termIdentifier>
+    <caption>
+      <langstring language="EN">insects</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>interaction_of_pesticides</termIdentifier>
+    <caption>
+      <langstring language="EN">interaction of pesticides</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>international-comparisons</termIdentifier>
+    <caption>
+      <langstring language="EN">international-comparisons</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>invasive-alien-species</termIdentifier>
+    <caption>
+      <langstring language="EN">invasive-alien-species</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>inventory_of_forest_damage</termIdentifier>
+    <caption>
+      <langstring language="EN">inventory of forest damage</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>jrc-forest-map</termIdentifier>
+    <caption>
+      <langstring language="EN">JRC-forest-map</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>land_clearing</termIdentifier>
+    <caption>
+      <langstring language="EN">land clearing</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>land_cover</termIdentifier>
+    <caption>
+      <langstring language="EN">land cover</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>land-monitoring-service</termIdentifier>
+    <caption>
+      <langstring language="EN">land-monitoring-service</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>land-use-classes</termIdentifier>
+    <caption>
+      <langstring language="EN">land-use-classes</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>lichens</termIdentifier>
+    <caption>
+      <langstring language="EN">lichens</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>linear-features</termIdentifier>
+    <caption>
+      <langstring language="EN">linear-features</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>litter</termIdentifier>
+    <caption>
+      <langstring language="EN">litter</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>lllegal-logging</termIdentifier>
+    <caption>
+      <langstring language="EN">lllegal-logging</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>local_afforestation</termIdentifier>
+    <caption>
+      <langstring language="EN">local afforestation</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>lone-trees</termIdentifier>
+    <caption>
+      <langstring language="EN">lone-trees</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>lulucf</termIdentifier>
+    <caption>
+      <langstring language="EN">LULUCF</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>lying-deadwood</termIdentifier>
+    <caption>
+      <langstring language="EN">lying-deadwood</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>mammals</termIdentifier>
+    <caption>
+      <langstring language="EN">mammals</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>manufacture</termIdentifier>
+    <caption>
+      <langstring language="EN">manufacture</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>map</termIdentifier>
+    <caption>
+      <langstring language="EN">map</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>mature-forest</termIdentifier>
+    <caption>
+      <langstring language="EN">mature-forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>mediterranean_forest</termIdentifier>
+    <caption>
+      <langstring language="EN">Mediterranean forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>metadata</termIdentifier>
+    <caption>
+      <langstring language="EN">metadata</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>methane</termIdentifier>
+    <caption>
+      <langstring language="EN">methane</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>methodology</termIdentifier>
+    <caption>
+      <langstring language="EN">methodology</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>minimum-crown-cover</termIdentifier>
+    <caption>
+      <langstring language="EN">minimum-crown-cover</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>minimum-height</termIdentifier>
+    <caption>
+      <langstring language="EN">minimum-height</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>mixed_forest</termIdentifier>
+    <caption>
+      <langstring language="EN">mixed forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>mixed_woodland</termIdentifier>
+    <caption>
+      <langstring language="EN">mixed woodland</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>mobilisation</termIdentifier>
+    <caption>
+      <langstring language="EN">mobilisation</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>mountain_forest</termIdentifier>
+    <caption>
+      <langstring language="EN">mountain forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>municipalities</termIdentifier>
+    <caption>
+      <langstring language="EN">municipalities</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>native-woodland-types</termIdentifier>
+    <caption>
+      <langstring language="EN">native-woodland-types</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>natura-2000</termIdentifier>
+    <caption>
+      <langstring language="EN">Natura-2000</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>natural_forest</termIdentifier>
+    <caption>
+      <langstring language="EN">natural forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>natural-disaster</termIdentifier>
+    <caption>
+      <langstring language="EN">natural-disaster</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>natural-expansion</termIdentifier>
+    <caption>
+      <langstring language="EN">natural-expansion</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>natural-forest-regions</termIdentifier>
+    <caption>
+      <langstring language="EN">natural-forest-regions</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>naturalness</termIdentifier>
+    <caption>
+      <langstring language="EN">naturalness</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>net-annual-increment</termIdentifier>
+    <caption>
+      <langstring language="EN">net-annual-increment</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>nfi-plot-number</termIdentifier>
+    <caption>
+      <langstring language="EN">NFI-plot-number</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>non-woodlands</termIdentifier>
+    <caption>
+      <langstring language="EN">non-woodlands</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>number-of-trees</termIdentifier>
+    <caption>
+      <langstring language="EN">number-of-trees</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>number-of-woods</termIdentifier>
+    <caption>
+      <langstring language="EN">number-of-woods</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>oak</termIdentifier>
+    <caption>
+      <langstring language="EN">oak</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>old-growth-forest</termIdentifier>
+    <caption>
+      <langstring language="EN">old-growth-forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>operability</termIdentifier>
+    <caption>
+      <langstring language="EN">operability</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>organisation-profile</termIdentifier>
+    <caption>
+      <langstring language="EN">organisation-profile</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>overdue-timber</termIdentifier>
+    <caption>
+      <langstring language="EN">overdue-timber</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>overthrow-type</termIdentifier>
+    <caption>
+      <langstring language="EN">overthrow-type</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>owl</termIdentifier>
+    <caption>
+      <langstring language="EN">OWL</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>ownership</termIdentifier>
+    <caption>
+      <langstring language="EN">ownership</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>ownership-structure</termIdentifier>
+    <caption>
+      <langstring language="EN">ownership-structure</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>pathogens</termIdentifier>
+    <caption>
+      <langstring language="EN">pathogens</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>percentage</termIdentifier>
+    <caption>
+      <langstring language="EN">percentage</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>persistence_of_pesticides</termIdentifier>
+    <caption>
+      <langstring language="EN">persistence of pesticides</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>pest</termIdentifier>
+    <caption>
+      <langstring language="EN">pest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>pest_infestation</termIdentifier>
+    <caption>
+      <langstring language="EN">pest infestation</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>pesticide</termIdentifier>
+    <caption>
+      <langstring language="EN">pesticide</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>phyto-climate</termIdentifier>
+    <caption>
+      <langstring language="EN">phyto-climate</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>phytopathology</termIdentifier>
+    <caption>
+      <langstring language="EN">phytopathology</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>pinus-pinaster</termIdentifier>
+    <caption>
+      <langstring language="EN">pinus-pinaster</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>planning</termIdentifier>
+    <caption>
+      <langstring language="EN">planning</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>plant_trade</termIdentifier>
+    <caption>
+      <langstring language="EN">plant trade</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>plantation</termIdentifier>
+    <caption>
+      <langstring language="EN">plantation</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>planting</termIdentifier>
+    <caption>
+      <langstring language="EN">planting</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>policy</termIdentifier>
+    <caption>
+      <langstring language="EN">policy</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>poorly-productive-forest</termIdentifier>
+    <caption>
+      <langstring language="EN">poorly-productive-forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>poplars</termIdentifier>
+    <caption>
+      <langstring language="EN">poplars</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>poplars-unaccounted-for</termIdentifier>
+    <caption>
+      <langstring language="EN">poplars-unaccounted-for</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>prevention_of_forest_fires</termIdentifier>
+    <caption>
+      <langstring language="EN">prevention of forest fires</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>primary_forest</termIdentifier>
+    <caption>
+      <langstring language="EN">primary forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>private_forest</termIdentifier>
+    <caption>
+      <langstring language="EN">private forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>processing</termIdentifier>
+    <caption>
+      <langstring language="EN">processing</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>productive-forest</termIdentifier>
+    <caption>
+      <langstring language="EN">productive-forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>product-specifications</termIdentifier>
+    <caption>
+      <langstring language="EN">product-specifications</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>protected-forest</termIdentifier>
+    <caption>
+      <langstring language="EN">protected-forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>protected-forest-areas</termIdentifier>
+    <caption>
+      <langstring language="EN">protected-forest-areas</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>protection</termIdentifier>
+    <caption>
+      <langstring language="EN">protection</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>protective-forest</termIdentifier>
+    <caption>
+      <langstring language="EN">protective-forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>public_domain</termIdentifier>
+    <caption>
+      <langstring language="EN">public domain</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>public-forest</termIdentifier>
+    <caption>
+      <langstring language="EN">public-forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>pulp</termIdentifier>
+    <caption>
+      <langstring language="EN">pulp</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>quality-indicators</termIdentifier>
+    <caption>
+      <langstring language="EN">quality-indicators</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>rain_forest</termIdentifier>
+    <caption>
+      <langstring language="EN">rain forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>raster-data</termIdentifier>
+    <caption>
+      <langstring language="EN">raster-data</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>recreation</termIdentifier>
+    <caption>
+      <langstring language="EN">recreation</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>reforestation</termIdentifier>
+    <caption>
+      <langstring language="EN">reforestation</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>regeneration</termIdentifier>
+    <caption>
+      <langstring language="EN">regeneration</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>relief</termIdentifier>
+    <caption>
+      <langstring language="EN">relief</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>renewable-energy</termIdentifier>
+    <caption>
+      <langstring language="EN">renewable-energy</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>resinous_plant</termIdentifier>
+    <caption>
+      <langstring language="EN">resinous plant</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>restocking</termIdentifier>
+    <caption>
+      <langstring language="EN">restocking</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>revegetation</termIdentifier>
+    <caption>
+      <langstring language="EN">revegetation</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>root</termIdentifier>
+    <caption>
+      <langstring language="EN">root</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>roots</termIdentifier>
+    <caption>
+      <langstring language="EN">roots</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>root-zone</termIdentifier>
+    <caption>
+      <langstring language="EN">root-zone</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>roundwood</termIdentifier>
+    <caption>
+      <langstring language="EN">roundwood</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>rural</termIdentifier>
+    <caption>
+      <langstring language="EN">rural</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>rural-development</termIdentifier>
+    <caption>
+      <langstring language="EN">rural-development</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>salvage-harvest</termIdentifier>
+    <caption>
+      <langstring language="EN">salvage-harvest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>salvation-harvest</termIdentifier>
+    <caption>
+      <langstring language="EN">salvation-harvest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>sample-plot-variables</termIdentifier>
+    <caption>
+      <langstring language="EN">sample-plot-variables</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>sampling-error</termIdentifier>
+    <caption>
+      <langstring language="EN">sampling-error</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>scrub</termIdentifier>
+    <caption>
+      <langstring language="EN">scrub</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>shrubs</termIdentifier>
+    <caption>
+      <langstring language="EN">shrubs</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>silviculture</termIdentifier>
+    <caption>
+      <langstring language="EN">silviculture</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>size-classes</termIdentifier>
+    <caption>
+      <langstring language="EN">size-classes</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>slope</termIdentifier>
+    <caption>
+      <langstring language="EN">slope</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>small-woodlands</termIdentifier>
+    <caption>
+      <langstring language="EN">small-woodlands</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>soil</termIdentifier>
+    <caption>
+      <langstring language="EN">soil</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>sowing</termIdentifier>
+    <caption>
+      <langstring language="EN">sowing</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>spatial-distribution</termIdentifier>
+    <caption>
+      <langstring language="EN">spatial-distribution</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>species-richness</termIdentifier>
+    <caption>
+      <langstring language="EN">species-richness</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>stand-composition</termIdentifier>
+    <caption>
+      <langstring language="EN">stand-composition</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>standing-deadwood</termIdentifier>
+    <caption>
+      <langstring language="EN">standing-deadwood</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>stand-maturity</termIdentifier>
+    <caption>
+      <langstring language="EN">stand-maturity</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>stands</termIdentifier>
+    <caption>
+      <langstring language="EN">stands</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>stand-size-classes</termIdentifier>
+    <caption>
+      <langstring language="EN">stand-size-classes</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>state_forest</termIdentifier>
+    <caption>
+      <langstring language="EN">state forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>stem</termIdentifier>
+    <caption>
+      <langstring language="EN">stem</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>stocking-index</termIdentifier>
+    <caption>
+      <langstring language="EN">stocking-index</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>stocking-index-level</termIdentifier>
+    <caption>
+      <langstring language="EN">stocking-index-level</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>storm</termIdentifier>
+    <caption>
+      <langstring language="EN">storm</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>storm_damage</termIdentifier>
+    <caption>
+      <langstring language="EN">storm damage</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>story-structure</termIdentifier>
+    <caption>
+      <langstring language="EN">story-structure</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>strategy</termIdentifier>
+    <caption>
+      <langstring language="EN">strategy</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>stump</termIdentifier>
+    <caption>
+      <langstring language="EN">stump</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>subalpine-woodland</termIdentifier>
+    <caption>
+      <langstring language="EN">subalpine-woodland</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>sustainability</termIdentifier>
+    <caption>
+      <langstring language="EN">sustainability</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>sustainable_forest_management</termIdentifier>
+    <caption>
+      <langstring language="EN">sustainable forest management</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>table-of-content</termIdentifier>
+    <caption>
+      <langstring language="EN">table-of-content</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>temperate_forest</termIdentifier>
+    <caption>
+      <langstring language="EN">temperate forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>temperate_woodland</termIdentifier>
+    <caption>
+      <langstring language="EN">temperate woodland</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>tending</termIdentifier>
+    <caption>
+      <langstring language="EN">tending</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>terms</termIdentifier>
+    <caption>
+      <langstring language="EN">terms</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>terrain-inclination</termIdentifier>
+    <caption>
+      <langstring language="EN">terrain-inclination</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>thinning</termIdentifier>
+    <caption>
+      <langstring language="EN">thinning</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>timber</termIdentifier>
+    <caption>
+      <langstring language="EN">timber</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>timber_forest</termIdentifier>
+    <caption>
+      <langstring language="EN">timber forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>timeline</termIdentifier>
+    <caption>
+      <langstring language="EN">timeline</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>trade</termIdentifier>
+    <caption>
+      <langstring language="EN">trade</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>translation</termIdentifier>
+    <caption>
+      <langstring language="EN">translation</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>tree</termIdentifier>
+    <caption>
+      <langstring language="EN">tree</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>tree_nursery</termIdentifier>
+    <caption>
+      <langstring language="EN">tree nursery</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>tree-age-classes</termIdentifier>
+    <caption>
+      <langstring language="EN">tree-age-classes</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>tree-crown-position</termIdentifier>
+    <caption>
+      <langstring language="EN">tree-crown-position</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>tree-diameter-(dbh)</termIdentifier>
+    <caption>
+      <langstring language="EN">tree-diameter-(DBH)</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>tree-parts</termIdentifier>
+    <caption>
+      <langstring language="EN">tree-parts</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>trees-outside-forest</termIdentifier>
+    <caption>
+      <langstring language="EN">trees-outside-forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>tree-species</termIdentifier>
+    <caption>
+      <langstring language="EN">tree-species</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>trees-under-agriculture</termIdentifier>
+    <caption>
+      <langstring language="EN">trees-under-agriculture</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>tropical_forest</termIdentifier>
+    <caption>
+      <langstring language="EN">tropical forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>turnover</termIdentifier>
+    <caption>
+      <langstring language="EN">turnover</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>undamaged</termIdentifier>
+    <caption>
+      <langstring language="EN">undamaged</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>understorey</termIdentifier>
+    <caption>
+      <langstring language="EN">understorey</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>understory-vegetation</termIdentifier>
+    <caption>
+      <langstring language="EN">understory-vegetation</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>unproductive-forest</termIdentifier>
+    <caption>
+      <langstring language="EN">unproductive-forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>unstocked</termIdentifier>
+    <caption>
+      <langstring language="EN">unstocked</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>urban-trees</termIdentifier>
+    <caption>
+      <langstring language="EN">urban-trees</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>utilisation-rate</termIdentifier>
+    <caption>
+      <langstring language="EN">utilisation-rate</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>vascular</termIdentifier>
+    <caption>
+      <langstring language="EN">vascular</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>vascular-plants</termIdentifier>
+    <caption>
+      <langstring language="EN">vascular-plants</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>vector-data</termIdentifier>
+    <caption>
+      <langstring language="EN">vector-data</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>vegetal-richness</termIdentifier>
+    <caption>
+      <langstring language="EN">vegetal-richness</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>vegetation</termIdentifier>
+    <caption>
+      <langstring language="EN">vegetation</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>vegetation-structure</termIdentifier>
+    <caption>
+      <langstring language="EN">vegetation-structure</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>vegetation-type</termIdentifier>
+    <caption>
+      <langstring language="EN">vegetation-type</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>veteran-trees</termIdentifier>
+    <caption>
+      <langstring language="EN">veteran-trees</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>virgin-forest</termIdentifier>
+    <caption>
+      <langstring language="EN">virgin-forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>vitality</termIdentifier>
+    <caption>
+      <langstring language="EN">vitality</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>water-table</termIdentifier>
+    <caption>
+      <langstring language="EN">water-table</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>wood</termIdentifier>
+    <caption>
+      <langstring language="EN">wood</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>wood_hauling</termIdentifier>
+    <caption>
+      <langstring language="EN">wood hauling</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>wood_resource</termIdentifier>
+    <caption>
+      <langstring language="EN">wood resource</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>wood_waste</termIdentifier>
+    <caption>
+      <langstring language="EN">wood waste</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>wood-consumption</termIdentifier>
+    <caption>
+      <langstring language="EN">wood-consumption</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>woodland_clearance</termIdentifier>
+    <caption>
+      <langstring language="EN">woodland clearance</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>wood-supply</termIdentifier>
+    <caption>
+      <langstring language="EN">wood-supply</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>young-forest</termIdentifier>
+    <caption>
+      <langstring language="EN">young-forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>harvesting</termIdentifier>
+    <caption>
+      <langstring language="EN">harvesting</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>pruning</termIdentifier>
+    <caption>
+      <langstring language="EN">pruning</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>agroforestry</termIdentifier>
+    <caption>
+      <langstring language="EN">agroforestry</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>patches</termIdentifier>
+    <caption>
+      <langstring language="EN">patches</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>fragmentation</termIdentifier>
+    <caption>
+      <langstring language="EN">fragmentation</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>connectivity</termIdentifier>
+    <caption>
+      <langstring language="EN">connectivity</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest-road</termIdentifier>
+    <caption>
+      <langstring language="EN">forest-road</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>forest-growth</termIdentifier>
+    <caption>
+      <langstring language="EN">forest-growth</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>productivity</termIdentifier>
+    <caption>
+      <langstring language="EN">productivity</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>phenology</termIdentifier>
+    <caption>
+      <langstring language="EN">phenology</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>nature-based-solutions</termIdentifier>
+    <caption>
+      <langstring language="EN">nature-based-solutions</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>ecosystem-based-management</termIdentifier>
+    <caption>
+      <langstring language="EN">ecosystem-based-management</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>reforestation</termIdentifier>
+    <caption>
+      <langstring language="EN">reforestation</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>transitional-woodland</termIdentifier>
+    <caption>
+      <langstring language="EN">transitional-woodland</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>green-urban-areas</termIdentifier>
+    <caption>
+      <langstring language="EN">green-urban-areas</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>green-urban-trees</termIdentifier>
+    <caption>
+      <langstring language="EN">green-urban-trees</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>burnt-areas</termIdentifier>
+    <caption>
+      <langstring language="EN">burnt-areas</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>wildfire</termIdentifier>
+    <caption>
+      <langstring language="EN">wildfire</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>olive-groves</termIdentifier>
+    <caption>
+      <langstring language="EN">olive-groves</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>vine-yards</termIdentifier>
+    <caption>
+      <langstring language="EN">vine-yards</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>orchards</termIdentifier>
+    <caption>
+      <langstring language="EN">orchards</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>fruit-tree</termIdentifier>
+    <caption>
+      <langstring language="EN">fruit-tree</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>small-woody-features</termIdentifier>
+    <caption>
+      <langstring language="EN">small-woody-features</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>riparian-areas</termIdentifier>
+    <caption>
+      <langstring language="EN">riparian-areas</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>floodplain-forest</termIdentifier>
+    <caption>
+      <langstring language="EN">floodplain-forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>boreal-forest</termIdentifier>
+    <caption>
+      <langstring language="EN">boreal-forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>mediterranean</termIdentifier>
+    <caption>
+      <langstring language="EN">mediterranean</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>continental</termIdentifier>
+    <caption>
+      <langstring language="EN">continental</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>macarosian</termIdentifier>
+    <caption>
+      <langstring language="EN">macarosian</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>conservation-status</termIdentifier>
+    <caption>
+      <langstring language="EN">conservation-status</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>favourable</termIdentifier>
+    <caption>
+      <langstring language="EN">favourable</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>unfavourable</termIdentifier>
+    <caption>
+      <langstring language="EN">unfavourable</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>bad</termIdentifier>
+    <caption>
+      <langstring language="EN">bad</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>parks</termIdentifier>
+    <caption>
+      <langstring language="EN">Parks</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>atlantic</termIdentifier>
+    <caption>
+      <langstring language="EN">Atlantic</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>alpine</termIdentifier>
+    <caption>
+      <langstring language="EN">Alpine</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>hemi-boreal</termIdentifier>
+    <caption>
+      <langstring language="EN">Hemi-boreal</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>abies_borisii-regis</termIdentifier>
+    <caption>
+      <langstring language="EN">Abies borisii-regis</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>black_pines</termIdentifier>
+    <caption>
+      <langstring language="EN">Black pines</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>fagus_sylvatica</termIdentifier>
+    <caption>
+      <langstring language="EN">Fagus sylvatica</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>abies_alba</termIdentifier>
+    <caption>
+      <langstring language="EN">Abies alba</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>abies_nebrodensis</termIdentifier>
+    <caption>
+      <langstring language="EN">Abies nebrodensis</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>abies_pinsapo</termIdentifier>
+    <caption>
+      <langstring language="EN">Abies pinsapo</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>acer</termIdentifier>
+    <caption>
+      <langstring language="EN">Acer</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>acidophilous</termIdentifier>
+    <caption>
+      <langstring language="EN">Acidophilous</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>alluvial_forests</termIdentifier>
+    <caption>
+      <langstring language="EN">Alluvial forests</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>alnion_incanae</termIdentifier>
+    <caption>
+      <langstring language="EN">Alnion incanae</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>alno-padion</termIdentifier>
+    <caption>
+      <langstring language="EN">Alno-Padion</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>alnus_glutinosa</termIdentifier>
+    <caption>
+      <langstring language="EN">Alnus glutinosa</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>alpine</termIdentifier>
+    <caption>
+      <langstring language="EN">Alpine</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>apennine</termIdentifier>
+    <caption>
+      <langstring language="EN">Apennine</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>asperulo-fagetum</termIdentifier>
+    <caption>
+      <langstring language="EN">Asperulo-Fagetum</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>balkan</termIdentifier>
+    <caption>
+      <langstring language="EN">Balkan</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>beech</termIdentifier>
+    <caption>
+      <langstring language="EN">Beech</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>betula_pubescens</termIdentifier>
+    <caption>
+      <langstring language="EN">Betula pubescens</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>bog_woodland</termIdentifier>
+    <caption>
+      <langstring language="EN">Bog woodland</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>caledonian</termIdentifier>
+    <caption>
+      <langstring language="EN">Caledonian</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>canarian</termIdentifier>
+    <caption>
+      <langstring language="EN">Canarian</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>carpathian</termIdentifier>
+    <caption>
+      <langstring language="EN">Carpathian</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>carpinus_betulus</termIdentifier>
+    <caption>
+      <langstring language="EN">Carpinus betulus</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>castanea_sativa</termIdentifier>
+    <caption>
+      <langstring language="EN">Castanea sativa</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>cedrus_brevifolia</termIdentifier>
+    <caption>
+      <langstring language="EN">Cedrus brevifolia</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>cupressus</termIdentifier>
+    <caption>
+      <langstring language="EN">Cupressus</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>dacian</termIdentifier>
+    <caption>
+      <langstring language="EN">Dacian</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>dinaric</termIdentifier>
+    <caption>
+      <langstring language="EN">Dinaric</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>dobrogean</termIdentifier>
+    <caption>
+      <langstring language="EN">Dobrogean</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>endemic</termIdentifier>
+    <caption>
+      <langstring language="EN">Endemic</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>endemic_forests</termIdentifier>
+    <caption>
+      <langstring language="EN">Endemic forests</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>euro-siberian_steppic</termIdentifier>
+    <caption>
+      <langstring language="EN">Euro-Siberian steppic</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>fagus-sylvatica</termIdentifier>
+    <caption>
+      <langstring language="EN">Fagus-sylvatica</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>fennoscandian</termIdentifier>
+    <caption>
+      <langstring language="EN">Fennoscandian</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>fir</termIdentifier>
+    <caption>
+      <langstring language="EN">fir</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>fraxinus_angustifolia</termIdentifier>
+    <caption>
+      <langstring language="EN">Fraxinus angustifolia</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>fraxinus_excelsior</termIdentifier>
+    <caption>
+      <langstring language="EN">Fraxinus excelsior</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>galicio-portuguese</termIdentifier>
+    <caption>
+      <langstring language="EN">Galicio-Portuguese</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>hellenic</termIdentifier>
+    <caption>
+      <langstring language="EN">Hellenic</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>hemiboreal</termIdentifier>
+    <caption>
+      <langstring language="EN">Hemiboreal</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>hornbeam</termIdentifier>
+    <caption>
+      <langstring language="EN">Hornbeam</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>ilex</termIdentifier>
+    <caption>
+      <langstring language="EN">Ilex</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>ilex_aquifolium</termIdentifier>
+    <caption>
+      <langstring language="EN">Ilex aquifolium</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>ilici-fagenion</termIdentifier>
+    <caption>
+      <langstring language="EN">Ilici-Fagenion</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>illyrian</termIdentifier>
+    <caption>
+      <langstring language="EN">Illyrian</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>junipero-populetum_albae</termIdentifier>
+    <caption>
+      <langstring language="EN">Junipero-Populetum albae</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>juniperus_spp.</termIdentifier>
+    <caption>
+      <langstring language="EN">Juniperus spp.</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>larix</termIdentifier>
+    <caption>
+      <langstring language="EN">Larix</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>laurel</termIdentifier>
+    <caption>
+      <langstring language="EN">Laurel</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>laurus</termIdentifier>
+    <caption>
+      <langstring language="EN">Laurus</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>limestone</termIdentifier>
+    <caption>
+      <langstring language="EN">Limestone</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>liquidambar_orientalis</termIdentifier>
+    <caption>
+      <langstring language="EN">Liquidambar orientalis</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>low_forest</termIdentifier>
+    <caption>
+      <langstring language="EN">low forest</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>luzulo-fagetum</termIdentifier>
+    <caption>
+      <langstring language="EN">Luzulo-Fagetum</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>macaronesian</termIdentifier>
+    <caption>
+      <langstring language="EN">Macaronesian</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>medio-european</termIdentifier>
+    <caption>
+      <langstring language="EN">Medio-European</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>mediterranean</termIdentifier>
+    <caption>
+      <langstring language="EN">Mediterranean</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>mediterranean_pine_forests</termIdentifier>
+    <caption>
+      <langstring language="EN">Mediterranean pine forests</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>mesogean</termIdentifier>
+    <caption>
+      <langstring language="EN">Mesogean</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>moesian</termIdentifier>
+    <caption>
+      <langstring language="EN">Moesian</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>montane</termIdentifier>
+    <caption>
+      <langstring language="EN">Montane</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>mountain</termIdentifier>
+    <caption>
+      <langstring language="EN">Mountain</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>nerio-tamaricetea</termIdentifier>
+    <caption>
+      <langstring language="EN">Nerio-Tamaricetea</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>nordic</termIdentifier>
+    <caption>
+      <langstring language="EN">Nordic</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>oak-hornbeam</termIdentifier>
+    <caption>
+      <langstring language="EN">oak-hornbeam</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>oak-sessile</termIdentifier>
+    <caption>
+      <langstring language="EN">oak-sessile</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>ocotea</termIdentifier>
+    <caption>
+      <langstring language="EN">Ocotea</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>old_acidophilous_oak</termIdentifier>
+    <caption>
+      <langstring language="EN">Old acidophilous oak</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>olea</termIdentifier>
+    <caption>
+      <langstring language="EN">Olea</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>ceratonia</termIdentifier>
+    <caption>
+      <langstring language="EN">Ceratonia</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>palm</termIdentifier>
+    <caption>
+      <langstring language="EN">Palm</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>pannonian</termIdentifier>
+    <caption>
+      <langstring language="EN">Pannonian</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>pannonian-balkanic</termIdentifier>
+    <caption>
+      <langstring language="EN">Pannonian-Balkanic</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>picea_abies</termIdentifier>
+    <caption>
+      <langstring language="EN">Picea abies</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>pine_forests</termIdentifier>
+    <caption>
+      <langstring language="EN">Pine forests</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>pinus_cembra</termIdentifier>
+    <caption>
+      <langstring language="EN">Pinus cembra</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>pinus_pinea</termIdentifier>
+    <caption>
+      <langstring language="EN">Pinus pinea</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>pinus_sylvestris</termIdentifier>
+    <caption>
+      <langstring language="EN">Pinus sylvestris</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>pinus_uncinata</termIdentifier>
+    <caption>
+      <langstring language="EN">Pinus uncinata</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>plains</termIdentifier>
+    <caption>
+      <langstring language="EN">Plains</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>platanus_orientalis</termIdentifier>
+    <caption>
+      <langstring language="EN">Platanus orientalis</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>pontic</termIdentifier>
+    <caption>
+      <langstring language="EN">Pontic</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>populus_alba</termIdentifier>
+    <caption>
+      <langstring language="EN">Populus alba</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>quercus_alnifolia</termIdentifier>
+    <caption>
+      <langstring language="EN">Quercus alnifolia</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>quercus_brachyphylla</termIdentifier>
+    <caption>
+      <langstring language="EN">Quercus brachyphylla</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>quercus_canariensis</termIdentifier>
+    <caption>
+      <langstring language="EN">Quercus canariensis</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>quercus_faginea</termIdentifier>
+    <caption>
+      <langstring language="EN">Quercus faginea</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>iberian</termIdentifier>
+    <caption>
+      <langstring language="EN">Iberian</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>quercus_frainetto</termIdentifier>
+    <caption>
+      <langstring language="EN">Quercus frainetto</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>quercus_ilex</termIdentifier>
+    <caption>
+      <langstring language="EN">Quercus ilex</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>quercus_infectoria</termIdentifier>
+    <caption>
+      <langstring language="EN">Quercus infectoria</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>quercus_macrolepis</termIdentifier>
+    <caption>
+      <langstring language="EN">Quercus macrolepis</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>quercus_petraea</termIdentifier>
+    <caption>
+      <langstring language="EN">Quercus petraea</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>quercus_pubescens</termIdentifier>
+    <caption>
+      <langstring language="EN">Quercus pubescens</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>quercus_pyrenaica</termIdentifier>
+    <caption>
+      <langstring language="EN">Quercus pyrenaica</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>quercus_robur</termIdentifier>
+    <caption>
+      <langstring language="EN">Quercus robur</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>quercus_rotundifolia</termIdentifier>
+    <caption>
+      <langstring language="EN">Quercus rotundifolia</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>quercus_spp.</termIdentifier>
+    <caption>
+      <langstring language="EN">Quercus spp.</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>quercus_suber_forests</termIdentifier>
+    <caption>
+      <langstring language="EN">Quercus suber forests</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>quercus_trojana</termIdentifier>
+    <caption>
+      <langstring language="EN">Quercus trojana</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>rhododendron_ponticum</termIdentifier>
+    <caption>
+      <langstring language="EN">Rhododendron ponticum</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>rhodopide</termIdentifier>
+    <caption>
+      <langstring language="EN">Rhodopide</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>riparian_mixed_forests</termIdentifier>
+    <caption>
+      <langstring language="EN">Riparian mixed forests</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>rumex_arifolius</termIdentifier>
+    <caption>
+      <langstring language="EN">Rumex arifolius</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>salix</termIdentifier>
+    <caption>
+      <langstring language="EN">Salix</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>salix_alba</termIdentifier>
+    <caption>
+      <langstring language="EN">Salix alba</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>sandy</termIdentifier>
+    <caption>
+      <langstring language="EN">Sandy</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>sarmatic</termIdentifier>
+    <caption>
+      <langstring language="EN">Sarmatic</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>scots_pine</termIdentifier>
+    <caption>
+      <langstring language="EN">Scots pine</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>scrub</termIdentifier>
+    <caption>
+      <langstring language="EN">Scrub</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>sessile_oak</termIdentifier>
+    <caption>
+      <langstring language="EN">Sessile oak</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>silver_fir</termIdentifier>
+    <caption>
+      <langstring language="EN">Silver fir</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>silver_lime</termIdentifier>
+    <caption>
+      <langstring language="EN">Silver lime</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>subalpine</termIdentifier>
+    <caption>
+      <langstring language="EN">Subalpine</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>subartic</termIdentifier>
+    <caption>
+      <langstring language="EN">Subartic</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>sub-atlantic</termIdentifier>
+    <caption>
+      <langstring language="EN">Sub-Atlantic</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>sub-atlantic_carpinion_betuli</termIdentifier>
+    <caption>
+      <langstring language="EN">Sub-Atlantic Carpinion betuli</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>submediterranean</termIdentifier>
+    <caption>
+      <langstring language="EN">Submediterranean</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>sub-mediterranean</termIdentifier>
+    <caption>
+      <langstring language="EN">Sub-mediterranean</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>swamp</termIdentifier>
+    <caption>
+      <langstring language="EN">Swamp</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>taxus</termIdentifier>
+    <caption>
+      <langstring language="EN">Taxus</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>taxus_baccata</termIdentifier>
+    <caption>
+      <langstring language="EN">Taxus baccata</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>thermophilous</termIdentifier>
+    <caption>
+      <langstring language="EN">Thermophilous</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>tilia</termIdentifier>
+    <caption>
+      <langstring language="EN">Tilia</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>ulmus</termIdentifier>
+    <caption>
+      <langstring language="EN">Ulmus</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>ulmus_laevis</termIdentifier>
+    <caption>
+      <langstring language="EN">Ulmus laevis</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>ulmus_minor</termIdentifier>
+    <caption>
+      <langstring language="EN">Ulmus minor</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>vaccinio-piceetea</termIdentifier>
+    <caption>
+      <langstring language="EN">Vaccinio-Piceetea</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>white_oak</termIdentifier>
+    <caption>
+      <langstring language="EN">White oak</langstring>
+    </caption>
+  </term>
+  <term>
+    <termIdentifier>wooded_dunes</termIdentifier>
+    <caption>
+      <langstring language="EN">Wooded dunes</langstring>
     </caption>
   </term>
 </vdex>
