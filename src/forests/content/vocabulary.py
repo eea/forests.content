@@ -22,7 +22,7 @@ def generic_vocabulary(_terms, sort=True):
 
     if _terms and isinstance(_terms, dict):
         _terms = _terms.items()
-    elif _terms and isinstance(_terms[0], basestring):
+    elif _terms and isinstance(_terms[0], str):
         _terms = [(x, x) for x in _terms]
 
     if sort:
