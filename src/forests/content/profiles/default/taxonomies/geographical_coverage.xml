@@ -3,203 +3,419 @@
   <vocabName>
     <langstring language="en">Geographical Coverage</langstring>
   </vocabName>
-  <vocabIdentifier>GEOGRAPHICAL_COVERAGE</vocabIdentifier>
-  <term>
-    <termIdentifier>EEA39</termIdentifier>
-    <caption>
-      <langstring language="en">EEA39</langstring>
-    </caption>
-  </term>
+  <vocabIdentifier>geographical_coverage</vocabIdentifier>
   <term>
     <termIdentifier>EU28</termIdentifier>
     <caption>
       <langstring language="en">EU28</langstring>
     </caption>
-  </term>
-  <term>
-    <termIdentifier>FAO234</termIdentifier>
-    <caption>
-      <langstring language="en">FAO234</langstring>
-    </caption>
-  </term>
-  <term>
-    <termIdentifier>SOEF46</termIdentifier>
-    <caption>
-      <langstring language="en">SOEF46</langstring>
-    </caption>
-  </term>
     <term>
-    <termIdentifier>AT</termIdentifier>
-    <caption>
-      <langstring language="en">Austria</langstring>
-    </caption>
+      <termIdentifier>AT</termIdentifier>
+      <caption>
+        <langstring language="en">Austria</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>BE</termIdentifier>
+      <caption>
+        <langstring language="en">Belgium</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>BG</termIdentifier>
+      <caption>
+        <langstring language="en">Bulgaria</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>HR</termIdentifier>
+      <caption>
+        <langstring language="en">Croatia</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>CY</termIdentifier>
+      <caption>
+        <langstring language="en">Cyprus</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>CZ</termIdentifier>
+      <caption>
+        <langstring language="en">Czechia</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>DK</termIdentifier>
+      <caption>
+        <langstring language="en">Denmark</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>EE</termIdentifier>
+      <caption>
+        <langstring language="en">Estonia</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>FI</termIdentifier>
+      <caption>
+        <langstring language="en">Finland</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>FR</termIdentifier>
+      <caption>
+        <langstring language="en">France</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>DE</termIdentifier>
+      <caption>
+        <langstring language="en">Germany</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>GR</termIdentifier>
+      <caption>
+        <langstring language="en">Greece</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>HU</termIdentifier>
+      <caption>
+        <langstring language="en">Hungary</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>IE</termIdentifier>
+      <caption>
+        <langstring language="en">Ireland</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>IT</termIdentifier>
+      <caption>
+        <langstring language="en">Italy</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>LV</termIdentifier>
+      <caption>
+        <langstring language="en">Latvia</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>LT</termIdentifier>
+      <caption>
+        <langstring language="en">Lithuania</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>LU</termIdentifier>
+      <caption>
+        <langstring language="en">Luxembourg</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>MT</termIdentifier>
+      <caption>
+        <langstring language="en">Malta</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>NL</termIdentifier>
+      <caption>
+        <langstring language="en">Netherlands</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>PL</termIdentifier>
+      <caption>
+        <langstring language="en">Poland</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>PT</termIdentifier>
+      <caption>
+        <langstring language="en">Portugal</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>RO</termIdentifier>
+      <caption>
+        <langstring language="en">Romania</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>SK</termIdentifier>
+      <caption>
+        <langstring language="en">Slovakia</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>SI</termIdentifier>
+      <caption>
+        <langstring language="en">Slovenia</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>ES</termIdentifier>
+      <caption>
+        <langstring language="en">Spain</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>SE</termIdentifier>
+      <caption>
+        <langstring language="en">Sweden</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>UK</termIdentifier>
+      <caption>
+        <langstring language="en">United Kingdom</langstring>
+      </caption>
+    </term>
   </term>
   <term>
-    <termIdentifier>BE</termIdentifier>
+    <termIdentifier>EEA39</termIdentifier>
     <caption>
-      <langstring language="en">Belgium</langstring>
+      <langstring language="en">EEA39</langstring>
     </caption>
-  </term>
-  <term>
-    <termIdentifier>CY</termIdentifier>
-    <caption>
-      <langstring language="en">Cyprus</langstring>
-    </caption>
-  </term>
-  <term>
-    <termIdentifier>CZ</termIdentifier>
-    <caption>
-      <langstring language="en">Czechia</langstring>
-    </caption>
-  </term>
-  <term>
-    <termIdentifier>DK</termIdentifier>
-    <caption>
-      <langstring language="en">Denmark</langstring>
-    </caption>
-  </term>
-  <term>
-    <termIdentifier>EE</termIdentifier>
-    <caption>
-      <langstring language="en">Estonia</langstring>
-    </caption>
-  </term>
-  <term>
-    <termIdentifier>FI</termIdentifier>
-    <caption>
-      <langstring language="en">Finland</langstring>
-    </caption>
-  </term>
-  <term>
-    <termIdentifier>FR</termIdentifier>
-    <caption>
-      <langstring language="en">France</langstring>
-    </caption>
-  </term>
-  <term>
-    <termIdentifier>DE</termIdentifier>
-    <caption>
-      <langstring language="en">Germany</langstring>
-    </caption>
-  </term>
-  <term>
-    <termIdentifier>GR</termIdentifier>
-    <caption>
-      <langstring language="en">Greece</langstring>
-    </caption>
-  </term>
-  <term>
-    <termIdentifier>HU</termIdentifier>
-    <caption>
-      <langstring language="en">Hungary</langstring>
-    </caption>
-  </term>
-  <term>
-    <termIdentifier>IE</termIdentifier>
-    <caption>
-      <langstring language="en">Ireland</langstring>
-    </caption>
-  </term>
-  <term>
-    <termIdentifier>IT</termIdentifier>
-    <caption>
-      <langstring language="en">Italy</langstring>
-    </caption>
-  </term>
-  <term>
-    <termIdentifier>LI</termIdentifier>
-    <caption>
-      <langstring language="en">Liechtenstein</langstring>
-    </caption>
-  </term>
-  <term>
-    <termIdentifier>LT</termIdentifier>
-    <caption>
-      <langstring language="en">Lithuania</langstring>
-    </caption>
-  </term>
-  <term>
-    <termIdentifier>LU</termIdentifier>
-    <caption>
-      <langstring language="en">Luxembourg</langstring>
-    </caption>
-  </term>
-  <term>
-    <termIdentifier>MT</termIdentifier>
-    <caption>
-      <langstring language="en">Malta</langstring>
-    </caption>
-  </term>
-  <term>
-    <termIdentifier>NL</termIdentifier>
-    <caption>
-      <langstring language="en">Netherlands</langstring>
-    </caption>
-  </term>
-  <term>
-    <termIdentifier>NO</termIdentifier>
-    <caption>
-      <langstring language="en">Norway</langstring>
-    </caption>
-  </term>
-  <term>
-    <termIdentifier>PL</termIdentifier>
-    <caption>
-      <langstring language="en">Poland</langstring>
-    </caption>
-  </term>
-  <term>
-    <termIdentifier>PT</termIdentifier>
-    <caption>
-      <langstring language="en">Portugal</langstring>
-    </caption>
-  </term>
-  <term>
-    <termIdentifier>RO</termIdentifier>
-    <caption>
-      <langstring language="en">Romania</langstring>
-    </caption>
-  </term>
-  <term>
-    <termIdentifier>SK</termIdentifier>
-    <caption>
-      <langstring language="en">Slovakia</langstring>
-    </caption>
-  </term>
-  <term>
-    <termIdentifier>SI</termIdentifier>
-    <caption>
-      <langstring language="en">Slovenia</langstring>
-    </caption>
-  </term>
-  <term>
-    <termIdentifier>ES</termIdentifier>
-    <caption>
-      <langstring language="en">Spain</langstring>
-    </caption>
-  </term>
-  <term>
-    <termIdentifier>SE</termIdentifier>
-    <caption>
-      <langstring language="en">Sweden</langstring>
-    </caption>
-  </term>
-  <term>
-    <termIdentifier>CH</termIdentifier>
-    <caption>
-      <langstring language="en">Switzerland</langstring>
-    </caption>
-  </term>
-  <term>
-    <termIdentifier>TR</termIdentifier>
-    <caption>
-      <langstring language="en">Turkey</langstring>
-    </caption>
-  </term>
-  <term>
-    <termIdentifier>UK</termIdentifier>
-    <caption>
-      <langstring language="en">United Kingdom</langstring>
-    </caption>
+    <term>
+      <termIdentifier>AL</termIdentifier>
+      <caption>
+        <langstring language="en">Albania</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>AT</termIdentifier>
+      <caption>
+        <langstring language="en">Austria</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>BE</termIdentifier>
+      <caption>
+        <langstring language="en">Belgium</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>BA</termIdentifier>
+      <caption>
+        <langstring language="en">Bosnia and Herzegovina</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>BG</termIdentifier>
+      <caption>
+        <langstring language="en">Bulgaria</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>HR</termIdentifier>
+      <caption>
+        <langstring language="en">Croatia</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>CY</termIdentifier>
+      <caption>
+        <langstring language="en">Cyprus</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>CZ</termIdentifier>
+      <caption>
+        <langstring language="en">Czechia</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>DK</termIdentifier>
+      <caption>
+        <langstring language="en">Denmark</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>EE</termIdentifier>
+      <caption>
+        <langstring language="en">Estonia</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>FI</termIdentifier>
+      <caption>
+        <langstring language="en">Finland</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>FR</termIdentifier>
+      <caption>
+        <langstring language="en">France</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>DE</termIdentifier>
+      <caption>
+        <langstring language="en">Germany</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>GR</termIdentifier>
+      <caption>
+        <langstring language="en">Greece</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>HU</termIdentifier>
+      <caption>
+        <langstring language="en">Hungary</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>IS</termIdentifier>
+      <caption>
+        <langstring language="en">Iceland</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>IE</termIdentifier>
+      <caption>
+        <langstring language="en">Ireland</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>IT</termIdentifier>
+      <caption>
+        <langstring language="en">Italy</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>XK</termIdentifier>
+      <caption>
+        <langstring language="en">Kosovo</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>LV</termIdentifier>
+      <caption>
+        <langstring language="en">Latvia</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>LI</termIdentifier>
+      <caption>
+        <langstring language="en">Liechtenstein</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>LT</termIdentifier>
+      <caption>
+        <langstring language="en">Lithuania</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>LU</termIdentifier>
+      <caption>
+        <langstring language="en">Luxembourg</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>MT</termIdentifier>
+      <caption>
+        <langstring language="en">Malta</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>ME</termIdentifier>
+      <caption>
+        <langstring language="en">Montenegro</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>NL</termIdentifier>
+      <caption>
+        <langstring language="en">Netherlands</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>MK</termIdentifier>
+      <caption>
+        <langstring language="en">North Macedonia</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>NO</termIdentifier>
+      <caption>
+        <langstring language="en">Norway</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>PL</termIdentifier>
+      <caption>
+        <langstring language="en">Poland</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>PT</termIdentifier>
+      <caption>
+        <langstring language="en">Portugal</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>RO</termIdentifier>
+      <caption>
+        <langstring language="en">Romania</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>RS</termIdentifier>
+      <caption>
+        <langstring language="en">Serbia</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>SK</termIdentifier>
+      <caption>
+        <langstring language="en">Slovakia</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>SI</termIdentifier>
+      <caption>
+        <langstring language="en">Slovenia</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>ES</termIdentifier>
+      <caption>
+        <langstring language="en">Spain</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>SE</termIdentifier>
+      <caption>
+        <langstring language="en">Sweden</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>CH</termIdentifier>
+      <caption>
+        <langstring language="en">Switzerland</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>TR</termIdentifier>
+      <caption>
+        <langstring language="en">Turkey</langstring>
+      </caption>
+    </term>
+    <term>
+      <termIdentifier>UK</termIdentifier>
+      <caption>
+        <langstring language="en">United Kingdom</langstring>
+      </caption>
+    </term>
   </term>
 </vdex>
