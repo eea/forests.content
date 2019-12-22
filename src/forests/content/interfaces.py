@@ -144,6 +144,7 @@ class IContentMetadata(model.Schema):
         description=u"Level of access, from 'public' to restricted'",
         vocabulary='collective.taxonomy.accessibility_levels',
         required=False,)
+
     geo_coverage = schema.Tuple(
         title=u"Geographical coverage",
         description=u"Geographic areas covered by this resource",
