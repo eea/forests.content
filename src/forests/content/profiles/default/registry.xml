@@ -6,7 +6,7 @@
 <!-- -*- extra stuff goes here -*- -->
 
     <records interface="plone.app.querystring.interfaces.IQueryField"
-             prefix="plone.app.querystring.field.resource_type">
+             prefix="plone.app.querystring.field.country_region">
         <value key="title" i18n:translate="">Country/Region</value>
         <value key="description" i18n:translate="">Content tagged for a country or region</value>
         <value key="enabled">True</value>
@@ -16,7 +16,7 @@
             <element>plone.app.querystring.operation.selection.all</element>
         </value>
        <value key="vocabulary">collective.taxonomy.geographical_coverage</value>
-       <value key="group" i18n:translate="">FISE</value>
+       <value key="group" i18n:translate="">DataConnector Parameter</value>
     </records>
 
 </registry>
