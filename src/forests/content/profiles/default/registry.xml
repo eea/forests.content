@@ -6,9 +6,27 @@
 <!-- -*- extra stuff goes here -*- -->
 
     <records interface="plone.app.querystring.interfaces.IQueryField"
-             prefix="plone.app.querystring.field.country_region">
+             prefix="plone.app.querystring.field.COUNTYR">
         <value key="title" i18n:translate="">Country/Region</value>
-        <value key="description" i18n:translate="">Content tagged for a country or region</value>
+        <value key="description" i18n:translate="">
+          Value is human readable country name, in English
+        </value>
+        <value key="enabled">True</value>
+        <value key="sortable">False</value>
+        <value key="operations">
+            <element>plone.app.querystring.operation.selection.any</element>
+            <element>plone.app.querystring.operation.selection.all</element>
+        </value>
+       <value key="vocabulary">collective.taxonomy.geographical_coverage</value>
+       <value key="group" i18n:translate="">DataConnector Parameter</value>
+    </records>
+
+    <records interface="plone.app.querystring.interfaces.IQueryField"
+             prefix="plone.app.querystring.field.NUTS_CODE">
+        <value key="title" i18n:translate="">NUTS Code</value>
+        <value key="description" i18n:translate="">
+          NUTS region code (country or region code)
+        </value>
         <value key="enabled">True</value>
         <value key="sortable">False</value>
         <value key="operations">
@@ -20,4 +38,3 @@
     </records>
 
 </registry>
-
