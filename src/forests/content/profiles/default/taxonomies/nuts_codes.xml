@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vdex
+  language="en"
+  xsi:schemaLocation="http://www.imsglobal.org/xsd/imsvdex_v1p0 imsvdex_v1p0.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd"
+  profileType="hierarchicalTokenTerms"
+  orderSignificant="true"
+  xmlns="http://www.imsglobal.org/xsd/imsvdex_v1p0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <vocabName>
+    <langstring language="en">NUTS Codes</langstring>
+  </vocabName>
+  <vocabIdentifier>nuts_codes</vocabIdentifier>
+  <term>
+    <termIdentifier>BG</termIdentifier>
+    <caption>
+      <langstring language="en">BG</langstring>
+    </caption>
+  </term>
+</vdex>
