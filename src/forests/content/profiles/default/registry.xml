@@ -6,7 +6,7 @@
 <!-- -*- extra stuff goes here -*- -->
 
     <records interface="plone.app.querystring.interfaces.IQueryField"
-             prefix="plone.app.querystring.field.COUNTYR">
+             prefix="plone.app.querystring.field.COUNTRY">
         <value key="title" i18n:translate="">Country/Region</value>
         <value key="description" i18n:translate="">
           Value is human readable country name, in English
