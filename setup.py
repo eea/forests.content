@@ -1,7 +1,10 @@
 # -*- coding: utf-8 -*-
 """Installer for the forests.content package."""
 
-from setuptools import find_packages, setup
+from os.path import join
+from setuptools import find_packages
+from setuptools import setup
+
 
 long_description = '\n\n'.join([
     open('README.rst').read(),
@@ -9,12 +12,15 @@ long_description = '\n\n'.join([
     open('CHANGES.rst').read(),
 ])
 
-version = '1.0a1'
+NAME = 'forests.content'
+PATH = ['src'] + NAME.split('.') + ['version.txt']
+VERSION = open(join(*PATH)).read().strip()
 
 setup(
-    name='forests.content',
-    version=version,
+    name=NAME,
+    version=VERSION,
     description="FORESTS Content",
+    long_description_content_type="text/x-rst",
     long_description=long_description,
     # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
