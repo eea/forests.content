@@ -1,8 +1,10 @@
 Changelog
 =========
 
-1.2-dev0 - (unreleased)
+1.2 - (2020-02-28)
 ---------------------------
+* Change: Fix release, add MANIFEST.in
+  [valentinab25]
 
 1.1 - (2020-02-26)
 ---------------------------
