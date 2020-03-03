@@ -1,6 +1,16 @@
 ========================
 forests.content
 ========================
+ 
+.. image:: https://ci.eionet.europa.eu/buildStatus/icon?job=Eionet/forests.content/develop&subject=develop
+  :target: https://ci.eionet.europa.eu/job/Eionet/job/forests.content/job/develop/display/redirect
+  :alt: Develop
+.. image:: https://ci.eionet.europa.eu/buildStatus/icon?job=Eionet/forests.content/master&subject=master
+  :target: https://ci.eionet.europa.eu/job/Eionet/job/forests.content/job/master/display/redirect
+  :alt: Master
+.. image:: https://img.shields.io/github/v/release/eea/forests.content
+  :target: https://eggrepo.eea.europa.eu/d/forests.content/
+  :alt: Release
 
 FORESTS Content
 
