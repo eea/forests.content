@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.3 - (2020-03-03)
+---------------------------
+* Change: Add jenkins badges
+  [valentinab25]
+
 1.2 - (2020-02-28)
 ---------------------------
 * Change: Fix release, add MANIFEST.in
