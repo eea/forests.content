@@ -1,6 +1,12 @@
 Changelog
 =========
 
+1.4 - (2020-03-19)
+---------------------------
+* Cleanup: Remove IBlocks schema patch as the `layout` fieldset is removed by Volto now.
+  See https://github.com/plone/volto/pull/1172/files
+  [avoinea refs #115202]
+
 1.3 - (2020-03-03)
 ---------------------------
 * Change: Add jenkins badges
