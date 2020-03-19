@@ -21,8 +21,3 @@ class SchemaTweaks(object):
         if self.schema.getName() == 'IRichTextBehavior':
             field = self.schema['text']
             field.description = u'Rich text, double click for toolbar.'
-
-        if self.schema.getName() == 'IBlocks':
-            del self.schema._Element__tagged_values[
-                'plone.supermodel.fieldsets'
-            ]
