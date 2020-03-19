@@ -1,6 +1,9 @@
 Changelog
 =========
 
+1.5-dev0 - (unreleased)
+---------------------------
+
 1.4 - (2020-03-19)
 ---------------------------
 * Cleanup: Remove IBlocks schema patch as the `layout` fieldset is removed by Volto now.
