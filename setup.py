@@ -45,6 +45,7 @@ setup(
     install_requires=[
         'plone.api',
         'requests',
+        'z3c.formwidget.optgroup',
         # 'plone.app.iterate >= 3.3.1',
         # 'plone.app.contenttypes',
         # 'plone.directives.dexterity',
