@@ -47,6 +47,7 @@ setup(
         'requests',
         'z3c.formwidget.optgroup >= 1.3rc1',
         'collective.taxonomy',
+        'collective.folderishtypes',
         # 'plone.app.iterate >= 3.3.1',
         # 'plone.app.contenttypes',
         # 'plone.directives.dexterity',
