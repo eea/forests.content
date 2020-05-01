@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+''' events module '''
 from zope.event import notify
 
 from forests.content.contenttypes import IRichImage
@@ -6,7 +7,7 @@ from plone.app.iterate.dexterity.utils import get_baseline
 from plone.app.iterate.event import WorkingCopyDeletedEvent
 
 
-def handle_iterate_wc_deletion(object, event):
+def handle_iterate_wc_deletion(ob, event):
     """ When a WorkingCopy is deleted, the problem was that the locking was not
     removed. We're manually triggering the IWorkingCopyDeletedEvent because
     the plone.app.iterate handler is registered for IWorkingCopyRelation, a
@@ -14,10 +15,10 @@ def handle_iterate_wc_deletion(object, event):
     implementation.
     """
     try:
-        baseline = get_baseline(object)
-    except:
+        baseline = get_baseline(ob)
+    except Exception:
         return
-    notify(WorkingCopyDeletedEvent(object, baseline, relation=None))
+    notify(WorkingCopyDeletedEvent(ob, baseline, relation=None))
 
 
 def set_title_description(obj, event):

@@ -1,3 +1,4 @@
+''' constants '''
 RESOURCE_TYPES = [
     ('RASTER_DATA', 'Raster data'),
     ('TABULAR_DATA', 'Tabular data'),
