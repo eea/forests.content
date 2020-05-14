@@ -1,3 +1,4 @@
+''' behavior module '''
 import logging
 
 from forests.content.interfaces import (IBasicMetadata, IContentMetadata,

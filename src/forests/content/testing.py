@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+''' create test content layers '''
 from plone.app.testing import applyProfile
 from plone.app.testing import FunctionalTesting
 from plone.app.testing import IntegrationTesting
@@ -9,16 +10,21 @@ import forests.content
 
 
 class ForestsContentLayer(PloneSandboxLayer):
+    """ForestsContentLayer."""
 
     defaultBases = (PLONE_FIXTURE,)
 
     def setUpZope(self, app, configurationContext):
-        # Load any other ZCML that is required for your tests.
-        # The z3c.autoinclude feature is disabled in the Plone fixture base
-        # layer.
+        ''' Load any other ZCML that is required for your tests.
+        The z3c.autoinclude feature is disabled in the Plone fixture base
+        layer. '''
         self.loadZCML(package=forests.content)
 
     def setUpPloneSite(self, portal):
+        """setUpPloneSite.
+
+        :param portal:
+        """
         applyProfile(portal, 'forests.content:default')
 
 

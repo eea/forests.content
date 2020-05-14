@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.5 - (2020-05-13)
+---------------------------
+* Change: Tests and Linters
+  [valipod]
+
 1.4 - (2020-03-19)
 ---------------------------
 * Cleanup: Remove IBlocks schema patch as the `layout` fieldset is removed by Volto now.

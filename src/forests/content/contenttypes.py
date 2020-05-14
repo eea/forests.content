@@ -40,7 +40,7 @@
 #
 #
 # class RichImage(dexterity.Container):
-#     """ Image content type for which we the richtext behavior is activated """
+#     """ Image content type for which the richtext behavior is activated """
 #     implements(IRichImage, IForestsContentLayer)
 #
 #     def html2text(self, html):

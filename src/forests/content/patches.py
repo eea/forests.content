@@ -1,3 +1,4 @@
+''' patches module '''
 from zope.component import adapter
 from zope.interface import implementer
 
@@ -8,8 +9,7 @@ from plone.supermodel import interfaces
 @implementer(interfaces.ISchemaPlugin)
 @adapter(IFormFieldProvider)
 class SchemaTweaks(object):
-    """
-    """
+    """SchemaTweaks."""
 
     order = 999999
 

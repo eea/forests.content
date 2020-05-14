@@ -1,3 +1,4 @@
+''' vocabulary '''
 from zope.interface import alsoProvides, implementer, provider
 from zope.schema.interfaces import IVocabularyFactory
 from zope.schema.vocabulary import SimpleTerm, SimpleVocabulary
@@ -12,6 +13,8 @@ from .constants import (ACCESSIBILITY_LEVELS, DATA_SOURCES, DATASETS,
 
 @implementer(IVocabularyFactory)
 class KeywordsVocabulary(KV):
+    """KeywordsVocabulary."""
+
     def __init__(self, index):
         self.keyword_index = index
 
@@ -29,6 +32,10 @@ def generic_vocabulary(_terms, sort=True):
         _terms = sorted(_terms, key=lambda x: x[0])
 
     def factory(context):
+        """factory.
+
+        :param context:
+        """
         return SimpleVocabulary([
             SimpleTerm(n, n.encode('utf-8'), l) for n, l in _terms
         ])
@@ -38,6 +45,10 @@ def generic_vocabulary(_terms, sort=True):
 
 @provider(IVocabularyFactory)
 def data_sources_vocabulary(context):
+    """data_sources_vocabulary.
+
+    :param context:
+    """
     terms = []
 
     for (source, items) in DATA_SOURCES:
