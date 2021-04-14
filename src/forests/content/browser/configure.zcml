@@ -14,4 +14,12 @@
     class=".views.DebugView"
     />
 
+  <browser:page
+    name="document_view_wide"
+    for="*"
+    template="pt/document_view_wide.pt"
+    permission="zope2.View"
+    class=".views.DocumentViewWide"
+    />
+
 </configure>
