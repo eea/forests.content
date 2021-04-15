@@ -1,6 +1,9 @@
 Changelog
 =========
 
+1.7-dev0 - (unreleased)
+---------------------------
+
 1.6 - (2021-04-15)
 ---------------------------
 * Change: Add a view (document_view_wide) for the homepage
