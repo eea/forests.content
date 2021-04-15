@@ -1,8 +1,10 @@
 Changelog
 =========
 
-1.6-dev0 - (unreleased)
+1.6 - (2021-04-15)
 ---------------------------
+* Change: Add a view (document_view_wide) for the homepage
+  [valipod]
 
 1.5 - (2020-05-13)
 ---------------------------
