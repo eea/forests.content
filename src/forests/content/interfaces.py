@@ -31,6 +31,7 @@ COLLECTION_YEARS_SCHEMA = json.dumps(
         }
     })
 
+
 @provider(IFormFieldProvider)
 class ILeadImageControls(model.Schema):
     """ FISE lead image controls
@@ -51,6 +52,7 @@ class ILeadImageControls(model.Schema):
         description='Insert Navigation from parent',
         required=False,
     )
+
 
 @provider(IFormFieldProvider)
 class IBasicMetadata(model.Schema):

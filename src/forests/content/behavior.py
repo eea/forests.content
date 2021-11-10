@@ -2,7 +2,8 @@
 import logging
 
 from forests.content.interfaces import (IBasicMetadata, IContentMetadata,
-                                        IGeospatialMetadata, ILeadImageControls)
+                                        IGeospatialMetadata, 
+                                        ILeadImageControls)
 from plone.app.dexterity.behaviors.metadata import (DCFieldProperty,
                                                     MetadataBase)
 
@@ -13,10 +14,12 @@ class LeadImageControls(MetadataBase):
     """ Controls for leading image adaptor
     """
 
-    big_leading_image = DCFieldProperty(ILeadImageControls['big_leading_image'])
+    big_leading_image = DCFieldProperty(
+        ILeadImageControls['big_leading_image'])
     inherit_leading_data = DCFieldProperty(
         ILeadImageControls['inherit_leading_data'])
-    lead_navigation = DCFieldProperty(ILeadImageControls['lead_navigation'])
+    lead_navigation = DCFieldProperty(
+        ILeadImageControls['lead_navigation'])
 
 
 class BasicMetadata(MetadataBase):
@@ -31,14 +34,17 @@ class ContentMetadata(MetadataBase):
     """ Standard Fise Metadata adaptor
     """
 
-    resource_type = DCFieldProperty(IContentMetadata['resource_type'])
+    resource_type = DCFieldProperty(
+        IContentMetadata['resource_type'])
     data_source = DCFieldProperty(IContentMetadata['data_source'])
     dataset = DCFieldProperty(IContentMetadata['dataset'])
     publisher = DCFieldProperty(IContentMetadata['publisher'])
     external_url = DCFieldProperty(IContentMetadata['external_url'])
     geo_coverage = DCFieldProperty(IContentMetadata['geo_coverage'])
-    publishing_year = DCFieldProperty(IContentMetadata['publishing_year'])
-    collection_years = DCFieldProperty(IContentMetadata['collection_years'])
+    publishing_year = DCFieldProperty(
+        IContentMetadata['publishing_year'])
+    collection_years = DCFieldProperty(
+        IContentMetadata['collection_years'])
     info_level = DCFieldProperty(IContentMetadata['info_level'])
     accessibility_level = DCFieldProperty(
         IContentMetadata['accessibility_level'])
