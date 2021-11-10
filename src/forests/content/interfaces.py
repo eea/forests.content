@@ -41,12 +41,12 @@ class ILeadImageControls(model.Schema):
     )
     inherit_leading_data = schema.Bool(
         title='Inherit Leading Data',
-        description='Inherit Leading image and text from parent. Note: this will override existing Leading Image!',
+        description='Inherit Leading image and text from parent',
         required=False,
     )
     lead_navigation = schema.Bool(
         title='Lead Navigation',
-        description='Insert Navigation. Note: This will inherit this page parent items as navigation elements',
+        description='Insert Navigation from parent',
         required=False,
     )
 
