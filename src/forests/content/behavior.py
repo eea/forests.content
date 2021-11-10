@@ -14,7 +14,8 @@ class LeadImageControls(MetadataBase):
     """
 
     big_leading_image = DCFieldProperty(ILeadImageControls['big_leading_image'])
-    inherit_leading_data = DCFieldProperty(ILeadImageControls['inherit_leading_data'])
+    inherit_leading_data = DCFieldProperty(
+        ILeadImageControls['inherit_leading_data'])
     lead_navigation = DCFieldProperty(ILeadImageControls['lead_navigation'])
 
 
