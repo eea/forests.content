@@ -2,11 +2,20 @@
 import logging
 
 from forests.content.interfaces import (IBasicMetadata, IContentMetadata,
-                                        IGeospatialMetadata)
+                                        IGeospatialMetadata, ILeadImageControls)
 from plone.app.dexterity.behaviors.metadata import (DCFieldProperty,
                                                     MetadataBase)
 
 logger = logging.getLogger(__name__)
+
+
+class LeadImageControls(MetadataBase):
+    """ Controls for leading image adaptor
+    """
+
+    big_leading_image = DCFieldProperty(ILeadImageControls['big_leading_image'])
+    inherit_leading_data = DCFieldProperty(ILeadImageControls['inherit_leading_data'])
+    lead_navigation = DCFieldProperty(ILeadImageControls['lead_navigation'])
 
 
 class BasicMetadata(MetadataBase):

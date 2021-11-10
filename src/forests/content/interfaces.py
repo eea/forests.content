@@ -31,6 +31,21 @@ COLLECTION_YEARS_SCHEMA = json.dumps(
         }
     })
 
+@provider(IFormFieldProvider)
+class ILeadImageControls(model.Schema):
+
+    big_leading_image = schema.Bool(
+        title='Set Leading image bigger',
+        required=False,
+    )
+    inherit_leading_data = schema.Bool(
+        title='Inherit Leading image and text from parent. Note: this will override existing Leading Image!',
+        required=False,
+    )
+    lead_navigation = schema.Bool(
+        title='Insert Navigation. Note: This will inherit this page parent items as navigation elements',
+        required=False,
+    )
 
 @provider(IFormFieldProvider)
 class IBasicMetadata(model.Schema):
