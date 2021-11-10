@@ -33,7 +33,7 @@ COLLECTION_YEARS_SCHEMA = json.dumps(
 
 @provider(IFormFieldProvider)
 class ILeadImageControls(model.Schema):
-    """ FISE Lead image controls. 
+    """ FISE lead image controls
     """
 
     big_leading_image = schema.Bool(
