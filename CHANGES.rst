@@ -1,8 +1,10 @@
 Changelog
 =========
 
-1.7-dev0 - (unreleased)
+1.7 - (2021-11-10)
 ---------------------------
+* Change: Added Lead image controls behavior
+  [andreiggr]
 
 1.6 - (2021-04-15)
 ---------------------------
