@@ -2,7 +2,7 @@
 import logging
 
 from forests.content.interfaces import (IBasicMetadata, IContentMetadata,
-                                        IGeospatialMetadata, 
+                                        IGeospatialMetadata,
                                         ILeadImageControls)
 from plone.app.dexterity.behaviors.metadata import (DCFieldProperty,
                                                     MetadataBase)
