@@ -1,6 +1,9 @@
 Changelog
 =========
 
+1.8-dev0 - (unreleased)
+---------------------------
+
 1.7 - (2021-11-10)
 ---------------------------
 * Change: Added Lead image controls behavior
