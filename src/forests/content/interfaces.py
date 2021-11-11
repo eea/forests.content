@@ -33,6 +33,28 @@ COLLECTION_YEARS_SCHEMA = json.dumps(
 
 
 @provider(IFormFieldProvider)
+class ILeadImageControls(model.Schema):
+    """ FISE lead image controls
+    """
+
+    big_leading_image = schema.Bool(
+        title='Big Leading Image',
+        description='Set Leading image bigger',
+        required=False,
+    )
+    inherit_leading_data = schema.Bool(
+        title='Inherit Leading Data',
+        description='Inherit Leading image and text from parent',
+        required=False,
+    )
+    lead_navigation = schema.Bool(
+        title='Lead Navigation',
+        description='Insert Navigation from parent',
+        required=False,
+    )
+
+
+@provider(IFormFieldProvider)
 class IBasicMetadata(model.Schema):
     """ FISE generic required metadata
     """
