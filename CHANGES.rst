@@ -1,8 +1,10 @@
 Changelog
 =========
 
-1.8-dev0 - (unreleased)
+1.8 - (2021-11-17)
 ---------------------------
+* Change: Lead image controls settings
+  [andreiggr]
 
 1.7 - (2021-11-10)
 ---------------------------
