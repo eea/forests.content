@@ -37,15 +37,12 @@ class ILeadImageControls(model.Schema):
     """ FISE lead image controls
     """
 
-    model.fieldset(
-        'lead_image_controls',
-        label="Lead Image Controls",
-        fields=[
-        'big_leading_image',
-        'inherit_leading_data',
-        'lead_navigation',
-        'lead_image_caption']
-    )
+    model.fieldset('lead_image_controls',
+                   label="Lead Image Controls",
+                   fields=[
+                       'big_leading_image', 'inherit_leading_data',
+                       'lead_navigation', 'lead_image_caption'
+                   ])
 
     big_leading_image = schema.Bool(
         title='Big Leading Image',
