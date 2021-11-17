@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.8 - (2021-11-17)
+---------------------------
+* Change: Lead image controls settings
+  [andreiggr]
+
 1.7 - (2021-11-10)
 ---------------------------
 * Change: Added Lead image controls behavior

@@ -12,30 +12,37 @@ from plone.autoform import directives as form
 from plone.autoform.interfaces import IFormFieldProvider
 from plone.schema import JSONField
 from plone.supermodel import model
+from plone.app.textfield import RichText
 
 
 class IForestsContentLayer(IDefaultBrowserLayer):
     """Marker interface that defines a browser layer."""
 
 
-COLLECTION_YEARS_SCHEMA = json.dumps(
-    {
-        "type": "object",
-        "properties": {
-            "start_year": {
-                "type": "string"
-            },
-            "end_year": {
-                "type": "string"
-            }
+COLLECTION_YEARS_SCHEMA = json.dumps({
+    "type": "object",
+    "properties": {
+        "start_year": {
+            "type": "string"
+        },
+        "end_year": {
+            "type": "string"
         }
-    })
+    }
+})
 
 
 @provider(IFormFieldProvider)
 class ILeadImageControls(model.Schema):
     """ FISE lead image controls
     """
+
+    model.fieldset('lead_image_controls',
+                   label="Lead Image Controls",
+                   fields=[
+                       'big_leading_image', 'inherit_leading_data',
+                       'lead_navigation', 'lead_image_caption'
+                   ])
 
     big_leading_image = schema.Bool(
         title='Big Leading Image',
@@ -50,6 +57,11 @@ class ILeadImageControls(model.Schema):
     lead_navigation = schema.Bool(
         title='Lead Navigation',
         description='Insert Navigation from parent',
+        required=False,
+    )
+    lead_image_caption = RichText(
+        title="FISE Lead Image Caption",
+        description="Metadata caption visible in lead image",
         required=False,
     )
 
@@ -67,25 +79,19 @@ class IBasicMetadata(model.Schema):
         missing_value=(),
         default=(),
     )
-    form.widget(
-        'topics',
-        AjaxSelectFieldWidget,
-        vocabulary='collective.taxonomy.topics'
-    )
+    form.widget('topics',
+                AjaxSelectFieldWidget,
+                vocabulary='collective.taxonomy.topics')
 
-    keywords = schema.Tuple(
-        title=u"Keywords",
-        description=u"Relevant FISE keywords",
-        value_type=schema.TextLine(),
-        required=False,
-        missing_value=(),
-        default=()
-    )
-    form.widget(
-        'keywords',
-        AjaxSelectFieldWidget,
-        vocabulary='collective.taxonomy.keywords'
-    )
+    keywords = schema.Tuple(title=u"Keywords",
+                            description=u"Relevant FISE keywords",
+                            value_type=schema.TextLine(),
+                            required=False,
+                            missing_value=(),
+                            default=())
+    form.widget('keywords',
+                AjaxSelectFieldWidget,
+                vocabulary='collective.taxonomy.keywords')
 
 
 @provider(IFormFieldProvider)
@@ -113,11 +119,10 @@ class IContentMetadata(model.Schema):
         default=(),
     )
 
-    dataset = schema.Choice(
-        title=u"Dataset",
-        description=u"The provenance dataset",
-        vocabulary="collective.taxonomy.datasets",
-        required=False)
+    dataset = schema.Choice(title=u"Dataset",
+                            description=u"The provenance dataset",
+                            vocabulary="collective.taxonomy.datasets",
+                            required=False)
 
     data_source = schema.Choice(
         title=u"Data Source",
@@ -147,25 +152,30 @@ class IContentMetadata(model.Schema):
         missing_value=(),
         default=(),
     )
-    form.widget(        # text with autocomplete
+    form.widget(  # text with autocomplete
         'publisher',
         AjaxSelectFieldWidget,
-        vocabulary='collective.taxonomy.publishers'
-    )
+        vocabulary='collective.taxonomy.publishers')
 
-    publishing_year = schema.Int(title=u"Publishing year", required=False,)
+    publishing_year = schema.Int(
+        title=u"Publishing year",
+        required=False,
+    )
 
     external_url = schema.TextLine(title=u"Link to resource", required=False)
 
-    info_level = schema.Choice(title=u"Info level",
-                               vocabulary='collective.taxonomy.info_levels',
-                               required=False,)
+    info_level = schema.Choice(
+        title=u"Info level",
+        vocabulary='collective.taxonomy.info_levels',
+        required=False,
+    )
 
     accessibility_level = schema.Choice(
         title=u'Accesibility levels',
         description=u"Level of access, from 'public' to restricted'",
         vocabulary='collective.taxonomy.accessibility_levels',
-        required=False,)
+        required=False,
+    )
 
     geo_coverage = schema.Tuple(
         title=u"Geographical coverage",
@@ -198,6 +208,7 @@ class IComputedMetadata(Interface):
     """
 
     resource_format = Attribute(u'Extracted from file extension')
+
 
 # directives.fieldset('fise-metadata', label="Forests Metadata", fields=[
 #     'resource_type',
