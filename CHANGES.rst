@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.9 - (2022-09-06)
+---------------------------
+* Change: Remove Page content type
+  [alecghica]
+
 1.8 - (2021-11-17)
 ---------------------------
 * Change: Lead image controls settings
