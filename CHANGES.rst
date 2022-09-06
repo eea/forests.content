@@ -1,6 +1,9 @@
 Changelog
 =========
 
+2.0-dev0 - (unreleased)
+---------------------------
+
 1.9 - (2022-09-06)
 ---------------------------
 * Change: Remove Page content type
