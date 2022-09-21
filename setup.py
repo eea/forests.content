@@ -35,7 +35,7 @@ setup(
     keywords='Python Plone',
     author='"EEA: IDM2 S-Team"',
     author_email='Christian.Prosperini@eea.europa.eu',
-    url='https://pypi.python.org/pypi/forests.content',
+    url='https://github.com/eea/forests.content',
     license='GPL version 2',
     packages=find_packages('src', exclude=['ez_setup']),
     namespace_packages=['forests'],
