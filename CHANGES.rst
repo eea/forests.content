@@ -1,8 +1,10 @@
 Changelog
 =========
 
-2.0-dev0 - (unreleased)
+2.0 - (2023-05-09)
 ---------------------------
+* Change: Remove composite page CT
+  [alecghica]
 
 1.9 - (2022-09-06)
 ---------------------------
