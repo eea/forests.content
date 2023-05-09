@@ -1,6 +1,9 @@
 Changelog
 =========
 
+2.1-dev0 - (unreleased)
+---------------------------
+
 2.0 - (2023-05-09)
 ---------------------------
 * Change: Remove composite page CT
