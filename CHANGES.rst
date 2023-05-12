@@ -1,6 +1,9 @@
 Changelog
 =========
 
+2.2-dev0 - (unreleased)
+---------------------------
+
 2.1 - (2023-05-12)
 ---------------------------
 * Change: add z3c.autoinclude.plugin snippet to setup.py (pip compat)
