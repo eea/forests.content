@@ -3,6 +3,8 @@ Changelog
 
 2.1-dev0 - (unreleased)
 ---------------------------
+* Change: add z3c.autoinclude.plugin snippet to setup.py (pip compat)
+  [valipod]
 
 2.0 - (2023-05-09)
 ---------------------------
