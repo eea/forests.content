@@ -6,7 +6,9 @@
   i18n_domain="forests.content">
 
   <i18n:registerTranslations directory="locales" />
-  <includeDependencies package="." />
+  <include package="plone.api" />
+  <include package="requests" />
+  <include package="z3c.formwidget.optgroup" />
 
   <include file="profiles.zcml" />
   <include file="vocabulary.zcml" />
